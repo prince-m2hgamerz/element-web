@@ -104,7 +104,7 @@ export enum KeyBindingAction {
     ToggleUserMenu = "KeyBinding.toggleTopLeftMenu",
     /** Toggle the short cut help dialog */
     ShowKeyboardSettings = "KeyBinding.showKeyBindingsSettings",
-    /** Got to the Element home screen */
+    /** Got to the VChat home screen */
     GoToHome = "KeyBinding.goToHomeView",
     /** Select prev room */
     SelectPrevRoom = "KeyBinding.previousRoom",

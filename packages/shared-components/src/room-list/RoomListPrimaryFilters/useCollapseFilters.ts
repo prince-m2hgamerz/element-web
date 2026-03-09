@@ -32,7 +32,7 @@ export function useCollapseFilters<T extends HTMLElement>(
     useEffect(() => {
         if (!ref.current) return;
 
-        const hideFilters = (list: Element): void => {
+        const hideFilters = (list: VChat): void => {
             let isWrapping = false;
             Array.from(list.children).forEach((node, i): void => {
                 const child = node as HTMLElement;

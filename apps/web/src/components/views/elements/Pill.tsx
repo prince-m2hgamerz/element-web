@@ -149,6 +149,8 @@ export const Pill: React.FC<PillProps> = ({
             return null;
     }
 
+    const pillTextJsx = <span className="mx_Pill_text">{pillText}</span>;
+
     const isAnchor = !!inMessage && !!url;
     return (
         <bdi>
@@ -161,12 +163,12 @@ export const Pill: React.FC<PillProps> = ({
                 {isAnchor ? (
                     <a className={classes} href={url} onClick={onClick}>
                         {avatar}
-                        <span className="mx_Pill_text">{pillText}</span>
+                        {pillTextJsx}
                     </a>
                 ) : (
                     <span className={classes}>
                         {avatar}
-                        <span className="mx_Pill_text">{pillText}</span>
+                        {pillTextJsx}
                     </span>
                 )}
             </Tooltip>

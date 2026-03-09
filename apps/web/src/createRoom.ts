@@ -386,7 +386,7 @@ export default async function createRoom(client: MatrixClient, opts: IOpts): Pro
                 // Set up this video room with a Jitsi call
                 await JitsiCall.create(await room);
             } else if (opts.roomType === RoomType.UnstableCall) {
-                // Set up this video room with an Element call
+                // Set up this video room with an VChat call
                 ElementCall.create(await room);
             }
         })

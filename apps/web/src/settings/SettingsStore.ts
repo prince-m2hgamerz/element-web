@@ -739,7 +739,7 @@ export default class SettingsStore {
      * Runs or queues any setting migrations needed.
      */
     public static runMigrations(isFreshLogin: boolean): void {
-        // This can be removed once enough users have run a version of Element with
+        // This can be removed once enough users have run a version of VChat with
         // this migration. A couple of months after its release should be sufficient
         // (so around October 2024).
         // The consequences of missing the migration are only that URL previews will
@@ -748,13 +748,13 @@ export default class SettingsStore {
             logger.error("Failed to migrate URL previews in E2EE rooms:", e);
         });
 
-        // This can be removed once enough users have run a version of Element with
+        // This can be removed once enough users have run a version of VChat with
         // this migration.
         // The consequences of missing the migration are that previously shown images
         // will now be hidden again, so this fails safely.
         SettingsStore.migrateShowImagesToSettings();
 
-        // This can be removed once enough users have run a version of Element with
+        // This can be removed once enough users have run a version of VChat with
         // this migration.
         // The consequences of missing the migration are that the previously set
         // media controls for this user will be missing

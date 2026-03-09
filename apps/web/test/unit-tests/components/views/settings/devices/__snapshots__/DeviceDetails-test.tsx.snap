@@ -246,7 +246,7 @@ exports[`<DeviceDetails /> renders device with metadata 1`] = `
             <td
               class="mxDeviceDetails_metadataValue"
             >
-              Element Web
+              VChat Web
             </td>
           </tr>
         </tbody>

@@ -55,8 +55,8 @@ const mockPromptBeforeInviteUnknownUsers = (value: boolean) => {
 };
 
 const mockCreateTrackedDialog = (callbackName: "onInviteAnyways" | "onGiveUp") => {
-    mocked(Modal.createDialog).mockImplementation((Element: ComponentType, props?: ComponentProps<ComponentType>) => {
-        if (Element === AskInviteAnywayDialog) {
+    mocked(Modal.createDialog).mockImplementation((VChat: ComponentType, props?: ComponentProps<ComponentType>) => {
+        if (VChat === AskInviteAnywayDialog) {
             (props as ComponentProps<typeof AskInviteAnywayDialog>)[callbackName]();
         }
         return { close: jest.fn(), finished: new Promise(() => {}) };
@@ -176,7 +176,7 @@ describe("MultiInviter", () => {
 
         it("should ask if user wants to unban user if they have permission", async () => {
             mocked(Modal.createDialog).mockImplementation(
-                (Element: ComponentType, props?: ComponentProps<ComponentType>): any => {
+                (VChat: ComponentType, props?: ComponentProps<ComponentType>): any => {
                     // We stub out the modal with an immediate affirmative (proceed) return
                     return { finished: Promise.resolve([true]) };
                 },

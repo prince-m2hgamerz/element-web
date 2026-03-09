@@ -12,7 +12,7 @@ exports[`<SettingsField /> should render with the default label 1`] = `
         class="_label_19upo_59"
         for="radix-_r_0_"
       >
-        Element Call URL
+        VChat Call URL
       </label>
       <div
         class="_controls_17lij_8"

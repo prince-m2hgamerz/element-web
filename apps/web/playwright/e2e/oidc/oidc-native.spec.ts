@@ -60,7 +60,7 @@ test.describe("OIDC Native", { tag: ["@no-firefox", "@no-webkit"] }, () => {
         const newPage = await newPagePromise;
         await newPage.getByText("Devices").click();
         await newPage.getByText(deviceId).click();
-        await expect(newPage.getByText("Element", { exact: true })).toBeVisible();
+        await expect(newPage.getByText("VChat", { exact: true })).toBeVisible();
         await expect(newPage.getByText("http://localhost:8080/")).toBeVisible();
         await expect(newPage).toHaveURL(/\/oauth2_session/);
         await newPage.close();

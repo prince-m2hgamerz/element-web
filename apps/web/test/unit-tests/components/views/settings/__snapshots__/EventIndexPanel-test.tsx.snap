@@ -23,14 +23,14 @@ exports[`<EventIndexPanel /> when event indexing is not supported renders link t
     class="mx_SettingsSubsection_text"
   >
     <span>
-      Element can't securely cache encrypted messages locally while running in a web browser. Use 
+      VChat can't securely cache encrypted messages locally while running in a web browser. Use 
       <a
         class="mx_ExternalLink"
         href="https://element.io/download"
         rel="noreferrer noopener"
         target="_blank"
       >
-        Element Desktop
+        VChat Desktop
         <svg
           class="mx_ExternalLink_icon"
           fill="currentColor"
@@ -59,7 +59,7 @@ exports[`<EventIndexPanel /> when event indexing is supported but not installed 
     class="mx_SettingsSubsection_text"
   >
     <span>
-      Element is missing some components required for securely caching encrypted messages locally. If you'd like to experiment with this feature, build a custom Element Desktop with 
+      VChat is missing some components required for securely caching encrypted messages locally. If you'd like to experiment with this feature, build a custom VChat Desktop with 
       <a
         class="mx_ExternalLink"
         href="https://github.com/vector-im/element-desktop/blob/develop/docs/native-node-modules.md#adding-seshat-for-search-in-e2e-encrypted-rooms"

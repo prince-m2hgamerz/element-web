@@ -2,11 +2,11 @@
 
 ## Separate domains
 
-We do not recommend running Element from the same domain name as your Matrix
+We do not recommend running VChat from the same domain name as your Matrix
 homeserver. The reason is the risk of XSS (cross-site-scripting)
-vulnerabilities that could occur if someone caused Element to load and render
+vulnerabilities that could occur if someone caused VChat to load and render
 malicious user generated content from a Matrix API which then had trusted
-access to Element (or other apps) due to sharing the same domain.
+access to VChat (or other apps) due to sharing the same domain.
 
 We have put some coarse mitigations into place to try to protect against this
 situation, but it's still not good practice to do it in the first place. See
@@ -15,9 +15,9 @@ situation, but it's still not good practice to do it in the first place. See
 ## Configuration best practices
 
 Unless you have special requirements, you will want to add the following to
-your web server configuration when hosting Element Web:
+your web server configuration when hosting VChat Web:
 
-- The `X-Frame-Options: SAMEORIGIN` header, to prevent Element Web from being
+- The `X-Frame-Options: SAMEORIGIN` header, to prevent VChat Web from being
   framed and protect from [clickjacking][owasp-clickjacking].
 - The `frame-ancestors 'self'` directive to your `Content-Security-Policy`
   header, as the modern replacement for `X-Frame-Options` (though both should be
@@ -56,7 +56,7 @@ instead of adding that last line.
 
 # Building From Source
 
-Element is a modular webapp built with modern ES6 and uses a Node.js build system.
+VChat is a modular webapp built with modern ES6 and uses a Node.js build system.
 Ensure you have the latest LTS version of Node.js installed.
 
 Using `pnpm` instead of `npm` is recommended. Please see the pnpm [install
@@ -79,24 +79,24 @@ guide](https://pnpm.io/installation#using-corepack) if you do not have it alread
    web server.
 
 Note that `pnpm dist` is not supported on Windows, so Windows users can run `pnpm build`,
-which will build all the necessary files into the `webapp` directory. The version of Element
+which will build all the necessary files into the `webapp` directory. The version of VChat
 will not appear in Settings without using the dist script. You can then mount the
 `webapp` directory on your web server to actually serve up the app, which is
 entirely static content.
 
 # config.json
 
-Element supports a variety of settings to configure default servers, behaviour, themes, etc.
+VChat supports a variety of settings to configure default servers, behaviour, themes, etc.
 See the [configuration docs](../../docs/config.md) for more details.
 
 # Labs Features
 
-Some features of Element may be enabled by flags in the `Labs` section of the settings.
+Some features of VChat may be enabled by flags in the `Labs` section of the settings.
 Some of these features are described in [labs.md](https://github.com/element-hq/element-web/blob/develop/docs/labs.md).
 
 # Caching requirements
 
-Element requires the following URLs not to be cached, when/if you are serving Element from your own webserver:
+VChat requires the following URLs not to be cached, when/if you are serving VChat from your own webserver:
 
 ```
 /config.*.json
@@ -106,8 +106,8 @@ Element requires the following URLs not to be cached, when/if you are serving El
 /index.html
 ```
 
-We also recommend that you force browsers to re-validate any cached copy of Element on page load by configuring your
-webserver to return `Cache-Control: no-cache` for `/`. This ensures the browser will fetch a new version of Element on
+We also recommend that you force browsers to re-validate any cached copy of VChat on page load by configuring your
+webserver to return `Cache-Control: no-cache` for `/`. This ensures the browser will fetch a new version of VChat on
 the next page load after it's been deployed. Note that this is already configured for you in the nginx config of our
 Dockerfile.
 
@@ -119,13 +119,13 @@ Please read through the following:
 2. [Code style](../../code_style.md)
 3. [Contribution guide](../../CONTRIBUTING.md)
 
-# Extending Element Web with Modules
+# Extending VChat Web with Modules
 
-Element Web supports a module system that allows you to extend or modify functionality at runtime. Modules are loaded dynamically and provide a safe, predictable API for customization.
+VChat Web supports a module system that allows you to extend or modify functionality at runtime. Modules are loaded dynamically and provide a safe, predictable API for customization.
 
 ## What are modules?
 
-Modules are extensions that can add or modify Element Web's functionality. They are:
+Modules are extensions that can add or modify VChat Web's functionality. They are:
 
 - Built using the [`@element-hq/element-web-module-api`](https://github.com/element-hq/element-modules/tree/main/packages/element-web-module-api)
 - Loaded in EW via [config.json](../../docs/config.md#modules)

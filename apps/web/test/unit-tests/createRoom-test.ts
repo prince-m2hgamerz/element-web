@@ -298,7 +298,7 @@ describe("createRoom", () => {
         expect(widgetPower).toEqual(100);
     });
 
-    it("sets up Element video rooms correctly", async () => {
+    it("sets up VChat video rooms correctly", async () => {
         const createCallSpy = jest.spyOn(ElementCall, "create");
 
         await createRoom(client, { roomType: RoomType.UnstableCall });

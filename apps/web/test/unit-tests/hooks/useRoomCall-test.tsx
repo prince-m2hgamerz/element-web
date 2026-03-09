@@ -83,19 +83,19 @@ describe("useRoomCall", () => {
         });
     }
 
-    describe("Element Call focus detection", () => {
-        it("Blocks Element Call if required foci are not configured", async () => {
+    describe("VChat Call focus detection", () => {
+        it("Blocks VChat Call if required foci are not configured", async () => {
             await setupAsyncStoreWithClient(CallStore.instance, client);
             const { result } = render();
             await waitFor(() => expect(result.current.callOptions).toEqual([PlatformCallType.LegacyCall]));
         });
-        it("Blocks Element Call if transport foci are the wrong type", async () => {
+        it("Blocks VChat Call if transport foci are the wrong type", async () => {
             client._unstable_getRTCTransports.mockResolvedValue([{ type: "anything-else" }]);
             await setupAsyncStoreWithClient(CallStore.instance, client);
             const { result } = render();
             await waitFor(() => expect(result.current.callOptions).toEqual([PlatformCallType.LegacyCall]));
         });
-        it("Blocks Element Call if well-known foci are the wrong type", async () => {
+        it("Blocks VChat Call if well-known foci are the wrong type", async () => {
             client.getClientWellKnown.mockReturnValue({
                 "org.matrix.msc4143.rtc_foci": {
                     type: "anything-else",
@@ -105,7 +105,7 @@ describe("useRoomCall", () => {
             const { result } = render();
             await waitFor(() => expect(result.current.callOptions).toEqual([PlatformCallType.LegacyCall]));
         });
-        it("Allows Element Call if foci is provided via getRTCTransports", async () => {
+        it("Allows VChat Call if foci is provided via getRTCTransports", async () => {
             client._unstable_getRTCTransports.mockResolvedValue([
                 { type: "livekit", livekit_service_url: "https://example.org" },
             ]);
@@ -116,7 +116,7 @@ describe("useRoomCall", () => {
                 expect(result.current.callOptions).toEqual([PlatformCallType.ElementCall, PlatformCallType.LegacyCall]),
             );
         });
-        it("Allows Element Call if foci is provided via .well-known", async () => {
+        it("Allows VChat Call if foci is provided via .well-known", async () => {
             client.getClientWellKnown.mockReturnValue({
                 "org.matrix.msc4143.rtc_foci": {
                     type: "livekit",
@@ -137,7 +137,7 @@ describe("useRoomCall", () => {
             await setupAsyncStoreWithClient(CallStore.instance, client);
             const { result } = render();
 
-            // Ensure Element Call is not a call option.
+            // Ensure VChat Call is not a call option.
             expect(result.current.callOptions).toEqual([PlatformCallType.LegacyCall]);
 
             // Now enable a transport and ensure that useRoomCall picks it up reactively.

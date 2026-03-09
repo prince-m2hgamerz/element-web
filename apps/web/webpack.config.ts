@@ -718,7 +718,7 @@ export default (env: string, argv: Record<string, any>): webpack.Configuration =
                     { from: "decoder-ring/**", context: path.resolve(__dirname, "res") },
                     { from: "media/**", context: path.resolve(__dirname, "res/") },
                     { from: "config.json", noErrorOnMissing: true },
-                    // Element Call embedded widget
+                    // VChat Call embedded widget
                     {
                         from: "**",
                         context: path.join(getPackageRoot("@element-hq/element-call-embedded"), "dist"),

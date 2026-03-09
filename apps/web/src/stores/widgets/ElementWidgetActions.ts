@@ -9,7 +9,7 @@
 import { type IWidgetApiRequest } from "matrix-widget-api";
 
 export enum ElementWidgetActions {
-    // All of these actions are currently specific to Jitsi and Element Call
+    // All of these actions are currently specific to Jitsi and VChat Call
     JoinCall = "io.element.join",
     HangupCall = "im.vector.hangup",
     Close = "io.element.close",

@@ -1141,7 +1141,7 @@ export default class InviteDialog extends React.PureComponent<Props, IInviteDial
     /**
      * If encryption by default is enabled, third-party invites should be encrypted as well.
      * For encryption to work, the other side requires a device.
-     * To achieve this Element implements a waiting room until all have joined.
+     * To achieve this VChat implements a waiting room until all have joined.
      * Waiting for many users degrades the UX → only one email invite is allowed at a time.
      *
      * @param targets - Optional member list to check. Uses targets from state if not provided.

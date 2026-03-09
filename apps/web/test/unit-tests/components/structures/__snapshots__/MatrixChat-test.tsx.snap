@@ -202,7 +202,7 @@ exports[`<MatrixChat /> Multi-tab lockout waits for other tab to stop during sta
         Blog
       </a>
       <a
-        href="https://mastodon.matrix.org/@Element"
+        href="https://mastodon.matrix.org/@VChat"
         rel="noreferrer noopener"
         target="_blank"
       >
@@ -284,7 +284,7 @@ exports[`<MatrixChat /> with a soft-logged-out session should show the soft-logo
             class="mx_AuthHeaderLogo"
           >
             <img
-              alt="Element"
+              alt="VChat"
               src="themes/element/img/logos/element-logo.svg"
             />
           </aside>
@@ -400,7 +400,7 @@ exports[`<MatrixChat /> with a soft-logged-out session should show the soft-logo
         Blog
       </a>
       <a
-        href="https://mastodon.matrix.org/@Element"
+        href="https://mastodon.matrix.org/@VChat"
         rel="noreferrer noopener"
         target="_blank"
       >

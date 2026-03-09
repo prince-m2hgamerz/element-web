@@ -230,7 +230,7 @@ export default class VerificationPanel extends React.PureComponent<IProps, IStat
               });
         let body: JSX.Element;
         if (this.state.reciprocateQREvent) {
-            // Element Web doesn't support scanning yet, so assume here we're the client being scanned.
+            // VChat Web doesn't support scanning yet, so assume here we're the client being scanned.
             body = (
                 <React.Fragment>
                     <p>{description}</p>

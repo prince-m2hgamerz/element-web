@@ -1,0 +1,11 @@
+<i> [webpack-dev-server] Project is running at:
+<i> [webpack-dev-server] Loopback: [36mhttp://localhost:8080/[39m, [36mhttp://[::1]:8080/[39m
+<i> [webpack-dev-server] On Your Network (IPv4): [36mhttp://172.19.176.1:8080/[39m
+<i> [webpack-dev-server] Content not from webpack is served from '[36m./webapp[39m' directory
+[33mNo name was provided for external module "@vector-im/compound-web" in "output.globals" – guessing "compoundWeb".[39m
+[33mNo name was provided for external module "react-virtuoso" in "output.globals" – guessing "reactVirtuoso".[39m
+[96msrc/room-list/RoomListPrimaryFilters/useCollapseFilters.ts[0m:[93m35[0m:[93m36[0m - [91merror[0m[90m TS2304: [0mCannot find name 'VChat'.
+
+[7m35[0m         const hideFilters = (list: VChat): void => {
+[7m  [0m [91m                                   ~~~~~[0m
+

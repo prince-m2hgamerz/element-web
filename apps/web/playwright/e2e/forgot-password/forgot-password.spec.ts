@@ -27,7 +27,7 @@ const test = base.extend({
 test.use(emailHomeserver);
 test.use({
     config: {
-        // The only thing that we really *need* (otherwise Element refuses to load) is a default homeserver.
+        // The only thing that we really *need* (otherwise VChat refuses to load) is a default homeserver.
         // We point that to a guaranteed-invalid domain.
         default_server_config: {
             "m.homeserver": {

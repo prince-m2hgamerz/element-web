@@ -1,0 +1,106 @@
+
+> vchat-web@1.12.11-rc.0 start
+> nx start
+
+
+[7m[1m[36m NX [39m[22m[27m  [36mRunning target [1mstart[22m for project vchat-web and [1m3[22m tasks it depends on:[39m
+
+[2m[36m[39m[22m
+
+[2m> [22m[2mnx run[22m @element-hq/web-shared-components:start
+
+[2m> [22mvite build --watch
+
+
+[2m> [22m[2mnx run[22m vchat-web:"prebuild:rethemendex"
+
+
+[2m> [22m[2mnx run[22m vchat-web:"prebuild:module_system"  [2m[existing outputs match the cache, left as is][22m
+
+[2m> [22mnode module_system/scripts/install.ts
+
+> vchat-web@1.12.11-rc.0 rethemendex
+> sh ./res/css/rethemendex.sh
+
+[2m> [22m[2mnx run[22m vchat-web:start
+
+[2m> [22mwebpack-dev-server --disable-interpret --output-path webapp --output-filename=bundles/_dev_/[name].js --output-chunk-filename=bundles/_dev_/[name].js --mode development
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+[36m
+watching for file changes...[39m
+[36m
+build started...[39m
+[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+transforming...
+[32m✓[39m 1098 modules transformed.
+rendering chunks...
+
+[vite:dts] Start generate declaration files...
+computing gzip size...
+[2mdist/[22m[35melement-web-shared-components.css  [39m[1m[2m 58.17 kB[22m[1m[22m[2m │ gzip:  9.94 kB[22m
+[2mdist/[22m[36melement-web-shared-components.js   [39m[1m[2m353.97 kB[22m[1m[22m[2m │ gzip: 98.84 kB[22m
+[2mdist/[22m[36melement-web-shared-components.umd.cjs  [39m[1m[2m264.11 kB[22m[1m[22m[2m │ gzip: 88.07 kB[22m
+[vite:dts] Start rollup declaration files...
+Analysis will use the bundled TypeScript version 5.8.2
+*** The target project appears to use TypeScript 5.9.3 which is newer than the bundled compiler engine; consider upgrading API Extractor.
+[vite:dts] Declaration files built in 11754ms.
+
+[36mbuilt in 13711ms.[39m
+594 assets
+4461 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 24638 ms
+623 assets
+4103 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2039 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2455 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2136 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2089 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2358 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2362 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2518 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2223 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2460 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2270 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2329 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2442 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2679 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2535 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2667 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2726 ms
+624 assets
+4094 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2711 ms
+623 assets
+4160 modules
+webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 10335 ms

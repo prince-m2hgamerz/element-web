@@ -16,6 +16,8 @@ import { Container, type Member, type IDevice } from "../UserInfo";
 import PresenceLabel from "../../rooms/PresenceLabel";
 import CopyableText from "../../elements/CopyableText";
 import { UserInfoHeaderVerificationView } from "./UserInfoHeaderVerificationView";
+import VerifiedBadge from "../../elements/VerifiedBadge";
+import { shouldShowVerifiedBadge } from "../../../../utils/verifiedBadges";
 
 export interface UserInfoHeaderViewProps {
     member: Member;
@@ -32,7 +34,12 @@ export const UserInfoHeaderView: React.FC<UserInfoHeaderViewProps> = ({
 }) => {
     const vm = useUserfoHeaderViewModel({ member, roomId });
     const avatarUrl = (member as User).avatarUrl;
-    const displayName = (member as RoomMember).rawDisplayName;
+    const displayName = (member as RoomMember).rawDisplayName ?? member.userId;
+    const showVerifiedBadge = shouldShowVerifiedBadge({
+        userId: member.userId,
+        roomId,
+        powerLevel: (member as RoomMember).powerLevel,
+    });
 
     let presenceLabel: JSX.Element | undefined;
 
@@ -70,7 +77,10 @@ export const UserInfoHeaderView: React.FC<UserInfoHeaderViewProps> = ({
                 <Flex direction="column" align="center" className="mx_UserInfo_profile">
                     <Heading size="sm" weight="semibold" as="h1" dir="auto">
                         <Flex className="mx_UserInfo_profile_name" direction="row-reverse" align="center">
-                            {displayName}
+                            <span>
+                                {displayName}
+                                {showVerifiedBadge && <VerifiedBadge />}
+                            </span>
                         </Flex>
                     </Heading>
                     {presenceLabel}

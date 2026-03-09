@@ -33,7 +33,7 @@ describe("VoipRoomSettingsTab", () => {
         jest.spyOn(cli, "getRoom").mockReturnValue(room);
     });
 
-    describe("Element Call", () => {
+    describe("VChat Call", () => {
         const mockPowerLevels = (events: Record<string, number>): void => {
             jest.spyOn(room.currentState, "getStateEvents").mockReturnValue({
                 getContent: () => ({
@@ -43,7 +43,7 @@ describe("VoipRoomSettingsTab", () => {
         };
 
         const getElementCallSwitch = (tab: RenderResult): HTMLElement => {
-            return tab.getByLabelText("Enable Element Call as an additional calling option in this room")!;
+            return tab.getByLabelText("Enable VChat Call as an additional calling option in this room")!;
         };
 
         describe("correct state", () => {
@@ -65,12 +65,12 @@ describe("VoipRoomSettingsTab", () => {
         });
 
         describe("enabling/disabling", () => {
-            describe("enabling Element calls", () => {
+            describe("enabling VChat calls", () => {
                 beforeEach(() => {
                     mockPowerLevels({ [ElementCallMemberEventType.name]: 100 });
                 });
 
-                it("enables Element calls in public room", async () => {
+                it("enables VChat calls in public room", async () => {
                     jest.spyOn(room, "getJoinRule").mockReturnValue(JoinRule.Public);
 
                     const tab = renderTab();
@@ -90,7 +90,7 @@ describe("VoipRoomSettingsTab", () => {
                     );
                 });
 
-                it("enables Element calls in private room", async () => {
+                it("enables VChat calls in private room", async () => {
                     jest.spyOn(room, "getJoinRule").mockReturnValue(JoinRule.Invite);
 
                     const tab = renderTab();
@@ -111,7 +111,7 @@ describe("VoipRoomSettingsTab", () => {
                 });
             });
 
-            it("disables Element calls", async () => {
+            it("disables VChat calls", async () => {
                 mockPowerLevels({ [ElementCallMemberEventType.name]: 0 });
 
                 const tab = renderTab();

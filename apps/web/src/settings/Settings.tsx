@@ -542,7 +542,7 @@ export const SETTINGS: Settings = {
     },
     // Defaulted to true Feb 26, intention is to remove entirely, all being well,
     // as this fixes bugs where display name / avatar are missing and also makes
-    // Element Web consistent with Element X.
+    // VChat Web consistent with VChat X.
     "useOnlyCurrentProfiles": {
         supportedLevels: LEVELS_ACCOUNT_SETTINGS,
         displayName: _td("settings|disable_historical_profile"),

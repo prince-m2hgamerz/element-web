@@ -54,7 +54,7 @@ interface FooViewProps {
     vm: FooViewModel;
 }
 
-export function FooView({ vm }: FooViewProps): JSX.Element {
+export function FooView({ vm }: FooViewProps): JSX.VChat {
     // useViewModel is a hook that subscribes to the view model and returns the snapshot. It also ensures that the component re-renders when the snapshot changes.
     const { title, description } = useViewModel(vm);
     return (

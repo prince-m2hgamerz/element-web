@@ -22,7 +22,7 @@ exports[`AnalyticsLearnMoreDialog should match snapshot 1`] = `
         class="mx_Heading_h3 mx_Dialog_title"
         id="mx_BaseDialog_title"
       >
-        Help improve Element
+        Help improve VChat
       </h1>
     </div>
     <div
@@ -34,7 +34,7 @@ exports[`AnalyticsLearnMoreDialog should match snapshot 1`] = `
       <div
         class="mx_AnalyticsLearnMore_copy"
       >
-        Help us identify issues and improve Element by sharing anonymous usage data. To understand how people use multiple devices, we'll generate a random identifier, shared by your devices.
+        Help us identify issues and improve VChat by sharing anonymous usage data. To understand how people use multiple devices, we'll generate a random identifier, shared by your devices.
       </div>
       <ul
         class="mx_AnalyticsLearnMore_bullets"

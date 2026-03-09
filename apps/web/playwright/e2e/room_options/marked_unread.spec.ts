@@ -35,13 +35,13 @@ test.describe("Mark as Unread", () => {
 
         // Regular notification on new message
         await expect(page.getByLabel(`Open room ${TEST_ROOM_NAME} with 1 unread message.`)).toBeVisible();
-        await expect(page).toHaveTitle("Element [1]");
+        await expect(page).toHaveTitle("VChat [1]");
 
         await page.goto("/#/room/" + roomId);
 
         // should now be read, since we viewed the room (we have to assert the page title:
         // the room badge isn't visible since we're viewing the room)
-        await expect(page).toHaveTitle("Element | " + TEST_ROOM_NAME);
+        await expect(page).toHaveTitle("VChat | " + TEST_ROOM_NAME);
 
         // navigate away from the room again
         await page.goto("/#/room/" + dummyRoomId);

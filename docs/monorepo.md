@@ -4,13 +4,13 @@ Some words about the structure of monorepo we are using here.
 
 ### Structure
 
-The monorepo is focused around multiple Typescript projects coming together to form an Element Web & Element Desktop app.
+The monorepo is focused around multiple Typescript projects coming together to form a VChat Web & VChat Desktop app.
 Some of the underlying typescript projects are useful for re-use elsewhere,
 e.g. `@element-hq/web-shared-components` is reused by https://github.com/element-hq/aurora.
 
 - `apps` - this directory holds the apps we build, `element-web` & `element-desktop`
     - Things in here are not published to npm
-    - Things in here have very non-standard publishing steps, e.g. Element Desktop `.deb` ships via reprepro.
+    - Things in here have very non-standard publishing steps, e.g. VChat Desktop `.deb` ships via reprepro.
     - Things in here are in lock-step versions with each other
     - Things in here are represented as a group in Immutable Github Releases
     - Things in here support pre-releases & hotfixes
@@ -20,7 +20,7 @@ e.g. `@element-hq/web-shared-components` is reused by https://github.com/element
     - Things in here are independently versioned
     - Things in here have a very simple publishing stage of `pnpm publish`
     - Things in here do not support pre-releases & hotfixes
-- `modules` - this directory will hold some Element Web/Desktop modules we maintain in order to add environment-specific functionalities atop Element
+- `modules` - this directory will hold some VChat Web/Desktop modules we maintain in order to add environment-specific functionalities atop VChat
     - Things in here are not published to npm
 
 ### Branches

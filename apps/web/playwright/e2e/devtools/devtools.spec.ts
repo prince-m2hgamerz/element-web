@@ -31,7 +31,7 @@ test.describe("Devtools", () => {
         });
 
         // Try entering a value for the Developer.elementCallUrl setting
-        const input = page.getByRole("textbox", { name: "Element Call URL" });
+        const input = page.getByRole("textbox", { name: "VChat Call URL" });
         await input.fill("https://example.com");
         await input.press("Enter");
         // expect EW NOT to reload

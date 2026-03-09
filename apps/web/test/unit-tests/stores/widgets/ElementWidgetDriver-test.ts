@@ -72,7 +72,7 @@ describe("ElementWidgetDriver", () => {
         client.getSafeUserId.mockReturnValue("@alice:example.org");
     });
 
-    it("auto-approves capabilities of virtual Element Call widgets", async () => {
+    it("auto-approves capabilities of virtual VChat Call widgets", async () => {
         const driver = new ElementWidgetDriver(
             new Widget({
                 id: "group_call",

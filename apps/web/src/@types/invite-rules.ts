@@ -17,7 +17,7 @@ export interface InviteConfigAccountData {
 }
 
 /**
- * Computed values based on MSC4155. Currently Element Web only supports
+ * Computed values based on MSC4155. Currently VChat Web only supports
  * blocking all invites.
  */
 export interface ComputedInviteConfig extends Record<string, unknown> {

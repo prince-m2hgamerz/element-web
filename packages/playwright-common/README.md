@@ -1,6 +1,6 @@
 # @element-hq/element-web-playwright-common
 
-Set of Playwright utilities to make it easier to write tests for Element Web, Element Web Modules & Element Desktop.
+Set of Playwright utilities to make it easier to write tests for VChat Web, VChat Web Modules & VChat Desktop.
 
 # This is a partial clone of https://github.com/element-hq/element-modules/tree/main/packages/element-web-playwright-common
 
@@ -12,11 +12,11 @@ The API is versioned using semver, with the major version incremented for breaki
 
 ## Copyright & License
 
-Copyright (c) 2026 Element Creations Ltd
+Copyright (c) 2026 VChat Creations Ltd
 
-This software is multi licensed by Element Creations Ltd (Element). It can be used either:
+This software is multi licensed by VChat Creations Ltd (VChat). It can be used either:
 
 (1) for free under the terms of the GNU Affero General Public License (as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version); OR
 
-(2) under the terms of a paid-for Element Commercial License agreement between you and Element (the terms of which may vary depending on what you and Element have agreed to).
+(2) under the terms of a paid-for VChat Commercial License agreement between you and VChat (the terms of which may vary depending on what you and VChat have agreed to).
 Unless required by applicable law or agreed to in writing, software distributed under the Licenses is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licenses for the specific language governing permissions and limitations under the Licenses.

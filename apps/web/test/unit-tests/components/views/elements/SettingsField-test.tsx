@@ -16,7 +16,7 @@ describe("<SettingsField />", () => {
     it("should render with the default label", () => {
         const component = render(<SettingsField settingKey="Developer.elementCallUrl" level={SettingLevel.DEVICE} />);
 
-        expect(screen.getByText("Element Call URL")).toBeTruthy();
+        expect(screen.getByText("VChat Call URL")).toBeTruthy();
         expect(component.asFragment()).toMatchSnapshot();
     });
 

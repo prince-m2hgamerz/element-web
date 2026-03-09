@@ -57,6 +57,8 @@ import { ToggleableIcon } from "./toggle/ToggleableIcon.tsx";
 import { CurrentRightPanelPhaseContextProvider } from "../../../../contexts/CurrentRightPanelPhaseContext.tsx";
 import { LocalRoom } from "../../../../models/LocalRoom.ts";
 import { useIsEncrypted } from "../../../../hooks/useIsEncrypted.ts";
+import VerifiedBadge from "../../elements/VerifiedBadge.tsx";
+import { shouldShowVerifiedBadge } from "../../../../utils/verifiedBadges.ts";
 
 function RoomHeaderButtons({
     room,
@@ -441,6 +443,13 @@ export default function RoomHeader({
     const historySharingEnabled = useFeatureEnabled("feature_share_history_on_invite");
     const dmMember = useDmMember(room);
     const isDirectMessage = !!dmMember;
+    const showVerifiedDmBadge =
+        isDirectMessage &&
+        shouldShowVerifiedBadge({
+            userId: dmMember?.userId,
+            roomId: room.roomId,
+            powerLevel: dmMember?.powerLevel,
+        });
     const isRoomEncrypted = useIsEncrypted(client, room);
     const e2eStatus = useEncryptionStatus(client, room);
     const askToJoinEnabled = useFeatureEnabled("feature_ask_to_join");
@@ -489,6 +498,7 @@ export default function RoomHeader({
                                 className="mx_RoomHeader_heading"
                             >
                                 <span className="mx_RoomHeader_truncated mx_lineClamp">{roomName}</span>
+                                {showVerifiedDmBadge && <VerifiedBadge className="mx_RoomHeader_verifiedUserBadge" />}
 
                                 {!isDirectMessage && joinRule === JoinRule.Public && (
                                     <Tooltip label={_t("common|public_room")} placement="right">

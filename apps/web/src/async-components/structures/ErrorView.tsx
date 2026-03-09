@@ -33,7 +33,7 @@ export const ErrorView: React.FC<IProps> = ({ title, messages, footer, children 
                 className="mx_ErrorView_logo"
                 height="160"
                 src="themes/element/img/logos/element-app-logo.png"
-                alt="Element"
+                alt="VChat"
             />
             <div className="mx_ErrorView_container">
                 <Heading size="md" weight="semibold">
@@ -119,7 +119,7 @@ export const UnsupportedBrowserView: React.FC<{
     onAccept?(this: void): void;
 }> = ({ onAccept }) => {
     const config = SdkConfig.get();
-    const brand = config.brand ?? "Element";
+    const brand = config.brand ?? "VChat";
 
     const hasDesktopBuilds =
         config.desktop_builds?.available &&

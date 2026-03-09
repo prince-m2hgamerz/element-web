@@ -32,7 +32,7 @@ interface CustomMessageComponentProps extends Omit<ModuleCustomMessageComponentP
 }
 
 interface CustomMessageRenderHints extends Omit<ModuleCustomCustomMessageRenderHints, "allowDownloadingMedia"> {
-    // Note. This just makes it easier to use this API on Element Web as we already have the moduleized event stored.
+    // Note. This just makes it easier to use this API on VChat Web as we already have the moduleized event stored.
     allowDownloadingMedia?: () => Promise<boolean>;
 }
 

@@ -325,7 +325,7 @@ describe("<SessionManagerTab />", () => {
         });
         mockClient.getAccountData.mockImplementation((eventType: string) => {
             const content = {
-                name: "Element Web",
+                name: "VChat Web",
                 version: "1.2.3",
                 url: "test.com",
             };

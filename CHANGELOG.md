@@ -11,7 +11,7 @@ Changes in [1.12.10](https://github.com/element-hq/element-web/releases/tag/v1.1
 * Improve visibility under contrast control mode ([#31847](https://github.com/element-hq/element-web/pull/31847)). Contributed by @t3chguy.
 * Unread Sorting - Add option for sorting in `OptionsMenuView` ([#31754](https://github.com/element-hq/element-web/pull/31754)). Contributed by @MidhunSureshR.
 * Unread sorting - Implement sorter and use it in the room list store ([#31723](https://github.com/element-hq/element-web/pull/31723)). Contributed by @MidhunSureshR.
-* Allow Element Call widgets to receive sticky events ([#31843](https://github.com/element-hq/element-web/pull/31843)). Contributed by @robintown.
+* Allow VChat Call widgets to receive sticky events ([#31843](https://github.com/element-hq/element-web/pull/31843)). Contributed by @robintown.
 * Improve icon rendering accessibility ([#31791](https://github.com/element-hq/element-web/pull/31791)). Contributed by @t3chguy.
 * Add message preview toggle to room list header option ([#31821](https://github.com/element-hq/element-web/pull/31821)). Contributed by @florianduros.
 
@@ -57,7 +57,7 @@ Changes in [1.12.9](https://github.com/element-hq/element-web/releases/tag/v1.12
 * Custom themes now import highlights in css ([#31758](https://github.com/element-hq/element-web/pull/31758)). Contributed by @Philldomd.
 * Use correct translation for url preview settings ([#31740](https://github.com/element-hq/element-web/pull/31740)). Contributed by @florianduros.
 * Fix error shown if accepting a 3pid invite ([#31735](https://github.com/element-hq/element-web/pull/31735)). Contributed by @dbkr.
-* Ensure correct focus configuration for Element Call before allowing users to call. ([#31490](https://github.com/element-hq/element-web/pull/31490)). Contributed by @Half-Shot.
+* Ensure correct focus configuration for VChat Call before allowing users to call. ([#31490](https://github.com/element-hq/element-web/pull/31490)). Contributed by @Half-Shot.
 * Fix emoji font in emoji picker header buttons ([#31679](https://github.com/element-hq/element-web/pull/31679)). Contributed by @t3chguy.
 * fix flaky test by waiting for chat panel before counting messages ([#31633](https://github.com/element-hq/element-web/pull/31633)). Contributed by @BillCarsonFr.
 
@@ -163,7 +163,7 @@ Changes in [1.12.7](https://github.com/element-hq/element-web/releases/tag/v1.12
 
 Changes in [1.12.6](https://github.com/element-hq/element-web/releases/tag/v1.12.6) (2025-12-03)
 ================================================================================================
-This release fixes a bug where 1:1 calling was incorrectly not available if no Element Call focus was set.
+This release fixes a bug where 1:1 calling was incorrectly not available if no VChat Call focus was set.
 
 ## 🐛 Bug Fixes
 
@@ -180,7 +180,7 @@ Changes in [1.12.5](https://github.com/element-hq/element-web/releases/tag/v1.12
 * upgrade to twemoji 17.0.2 and fix #14695 ([#31267](https://github.com/element-hq/element-web/pull/31267)). Contributed by @ara4n.
 * Add options to hide right panel in room view ([#31252](https://github.com/element-hq/element-web/pull/31252)). Contributed by @florianduros.
 * Delayed event management: split endpoints, no auth  ([#31183](https://github.com/element-hq/element-web/pull/31183)). Contributed by @AndrewFerr.
-* Support using Element Call for voice calls in DMs ([#30817](https://github.com/element-hq/element-web/pull/30817)). Contributed by @Half-Shot.
+* Support using VChat Call for voice calls in DMs ([#30817](https://github.com/element-hq/element-web/pull/30817)). Contributed by @Half-Shot.
 * Improve screen reader accessibility of auth pages ([#31236](https://github.com/element-hq/element-web/pull/31236)). Contributed by @t3chguy.
 * Add posthog tracking for key backup toasts ([#31195](https://github.com/element-hq/element-web/pull/31195)). Contributed by @Half-Shot.
 
@@ -286,7 +286,7 @@ Changes in [1.12.1](https://github.com/element-hq/element-web/releases/tag/v1.12
 * Rich Text Editor: Add emoji suggestion support ([#30873](https://github.com/element-hq/element-web/pull/30873)). Contributed by @langleyd.
 * feat: Disable session lock when running in element-desktop ([#30643](https://github.com/element-hq/element-web/pull/30643)). Contributed by @kaylendog.
 * Improve invite dialog ui - Part 1 ([#30764](https://github.com/element-hq/element-web/pull/30764)). Contributed by @florianduros.
-* Update Message Sound for Element ([#30804](https://github.com/element-hq/element-web/pull/30804)). Contributed by @beatdemon.
+* Update Message Sound for VChat ([#30804](https://github.com/element-hq/element-web/pull/30804)). Contributed by @beatdemon.
 * Add new and improved ringtone ([#30761](https://github.com/element-hq/element-web/pull/30761)). Contributed by @Half-Shot.
 * Disable RTE formatting buttons when the content contains a slash command ([#30802](https://github.com/element-hq/element-web/pull/30802)). Contributed by @langleyd.
 
@@ -314,7 +314,7 @@ Changes in [1.12.0](https://github.com/element-hq/element-web/releases/tag/v1.12
 * Add decline button to call notification toast (use new notification event) ([#30729](https://github.com/element-hq/element-web/pull/30729)). Contributed by @toger5.
 * Use the new room list by default ([#30640](https://github.com/element-hq/element-web/pull/30640)). Contributed by @langleyd.
 * "Verify this device" redesign ([#30596](https://github.com/element-hq/element-web/pull/30596)). Contributed by @uhoreg.
-* Set Element Call "intents" when starting and answering DM calls. ([#30730](https://github.com/element-hq/element-web/pull/30730)). Contributed by @Half-Shot.
+* Set VChat Call "intents" when starting and answering DM calls. ([#30730](https://github.com/element-hq/element-web/pull/30730)). Contributed by @Half-Shot.
 * Add axe compliance for new room list ([#30700](https://github.com/element-hq/element-web/pull/30700)). Contributed by @langleyd.
 * Stop ringing and remove toast if another device answers a RTC call. ([#30728](https://github.com/element-hq/element-web/pull/30728)). Contributed by @Half-Shot.
 * Automatically adjust history visibility when making a room private ([#30713](https://github.com/element-hq/element-web/pull/30713)). Contributed by @Half-Shot.
@@ -326,7 +326,7 @@ Changes in [1.12.0](https://github.com/element-hq/element-web/releases/tag/v1.12
 * [Backport staging] Avoid flicker of the room list filter on resize ([#30794](https://github.com/element-hq/element-web/pull/30794)). Contributed by @RiotRobot.
 * Don't show release announcements while toasts are displayed ([#30770](https://github.com/element-hq/element-web/pull/30770)). Contributed by @dbkr.
 * Fix enabling key backup not working if there is an untrusted key backup ([#30707](https://github.com/element-hq/element-web/pull/30707)). Contributed by @Half-Shot.
-* Force `preload` to be false when setting an intent on an Element Call. ([#30759](https://github.com/element-hq/element-web/pull/30759)). Contributed by @Half-Shot.
+* Force `preload` to be false when setting an intent on a VChat Call. ([#30759](https://github.com/element-hq/element-web/pull/30759)). Contributed by @Half-Shot.
 * Fix handling of 413 server response when uploading media ([#30737](https://github.com/element-hq/element-web/pull/30737)). Contributed by @hughns.
 * Make landmark navigation work with new room list ([#30747](https://github.com/element-hq/element-web/pull/30747)). Contributed by @dbkr.
 * Prevent voice message from displaying spurious errors ([#30736](https://github.com/element-hq/element-web/pull/30736)). Contributed by @florianduros.
@@ -460,9 +460,9 @@ Changes in [1.11.106](https://github.com/element-hq/element-web/releases/tag/v1.
 
 * [Backport staging] Fix e2e icon colour ([#30304](https://github.com/element-hq/element-web/pull/30304)). Contributed by @RiotRobot.
 * Add support for module message hint `allowDownloadingMedia` ([#30252](https://github.com/element-hq/element-web/pull/30252)). Contributed by @Half-Shot.
-* Update the mobile\_guide page to the new design and link out to Element X by default. ([#30172](https://github.com/element-hq/element-web/pull/30172)). Contributed by @pixlwave.
+* Update the mobile\_guide page to the new design and link out to VChat X by default. ([#30172](https://github.com/element-hq/element-web/pull/30172)). Contributed by @pixlwave.
 * Filter settings exported when rageshaking ([#30236](https://github.com/element-hq/element-web/pull/30236)). Contributed by @Half-Shot.
-* Allow Element Call to learn the room name ([#30213](https://github.com/element-hq/element-web/pull/30213)). Contributed by @robintown.
+* Allow VChat Call to learn the room name ([#30213](https://github.com/element-hq/element-web/pull/30213)). Contributed by @robintown.
 
 ## 🐛 Bug Fixes
 
@@ -584,7 +584,7 @@ Changes in [1.11.100](https://github.com/element-hq/element-web/releases/tag/v1.
 ## ✨ Features
 
 * Move rich topics out of labs / stabilise MSC3765 ([#29817](https://github.com/element-hq/element-web/pull/29817)). Contributed by @Johennes.
-* Spell out that Element Web does \*not\* work on mobile. ([#29211](https://github.com/element-hq/element-web/pull/29211)). Contributed by @ara4n.
+* Spell out that VChat Web does \*not\* work on mobile. ([#29211](https://github.com/element-hq/element-web/pull/29211)). Contributed by @ara4n.
 * Add message preview support to the new room list ([#29784](https://github.com/element-hq/element-web/pull/29784)). Contributed by @dbkr.
 * Global configuration flag for media previews ([#29582](https://github.com/element-hq/element-web/pull/29582)). Contributed by @Half-Shot.
 * New room list: add partial keyboard shortcuts support ([#29783](https://github.com/element-hq/element-web/pull/29783)). Contributed by @florianduros.
@@ -604,7 +604,7 @@ Changes in [1.11.100](https://github.com/element-hq/element-web/releases/tag/v1.
 
 Changes in [1.11.99](https://github.com/element-hq/element-web/releases/tag/v1.11.99) (2025-04-23)
 ==================================================================================================
-No changes, just bumping the version to accommodate a new Element Desktop release
+No changes, just bumping the version to accommodate a new VChat Desktop release
 
 Changes in [1.11.98](https://github.com/element-hq/element-web/releases/tag/v1.11.98) (2025-04-22)
 ==================================================================================================
@@ -625,7 +625,7 @@ Changes in [1.11.98](https://github.com/element-hq/element-web/releases/tag/v1.1
 * New room list: fix public room icon visibility when filter change ([#29737](https://github.com/element-hq/element-web/pull/29737)). Contributed by @florianduros.
 * Fix custom theme support for short hex \& rgba hex strings ([#29726](https://github.com/element-hq/element-web/pull/29726)). Contributed by @t3chguy.
 * New room list: minor visual fixes ([#29723](https://github.com/element-hq/element-web/pull/29723)). Contributed by @florianduros.
-* Fix getOidcCallbackUrl for Element Desktop ([#29711](https://github.com/element-hq/element-web/pull/29711)). Contributed by @t3chguy.
+* Fix getOidcCallbackUrl for VChat Desktop ([#29711](https://github.com/element-hq/element-web/pull/29711)). Contributed by @t3chguy.
 * Fix some webp images improperly marked as animated ([#29713](https://github.com/element-hq/element-web/pull/29713)). Contributed by @Petersmit27.
 * Revert deletion of hydrateSession ([#29703](https://github.com/element-hq/element-web/pull/29703)). Contributed by @Jujure.
 * Fix converttoroom \& converttodm not working ([#29705](https://github.com/element-hq/element-web/pull/29705)). Contributed by @t3chguy.
@@ -643,7 +643,7 @@ Changes in [1.11.97](https://github.com/element-hq/element-web/releases/tag/v1.1
 ## ✨ Features
 
 * New room list: reduce padding between avatar and room list border ([#29634](https://github.com/element-hq/element-web/pull/29634)). Contributed by @florianduros.
-* Bundle Element Call with Element Web packages ([#29309](https://github.com/element-hq/element-web/pull/29309)). Contributed by @t3chguy.
+* Bundle VChat Call with VChat Web packages ([#29309](https://github.com/element-hq/element-web/pull/29309)). Contributed by @t3chguy.
 * Hide an event notification if it is redacted ([#29605](https://github.com/element-hq/element-web/pull/29605)). Contributed by @Half-Shot.
 * Docker: Use nginx-unprivileged as base image ([#29353](https://github.com/element-hq/element-web/pull/29353)). Contributed by @AndrewFerr.
 * Switch away from nesting React trees and mangling the DOM ([#29586](https://github.com/element-hq/element-web/pull/29586)). Contributed by @t3chguy.
@@ -664,7 +664,7 @@ Changes in [1.11.97](https://github.com/element-hq/element-web/releases/tag/v1.1
 * Fix scroll issues in memberlist ([#29392](https://github.com/element-hq/element-web/pull/29392)). Contributed by @MidhunSureshR.
 * Ensure clicks on spoilers do not get handled by the hidden content ([#29618](https://github.com/element-hq/element-web/pull/29618)). Contributed by @t3chguy.
 * New room list: add cursor pointer on room list item ([#29627](https://github.com/element-hq/element-web/pull/29627)). Contributed by @florianduros.
-* Fix missing ambiguous url tooltips on Element Desktop ([#29619](https://github.com/element-hq/element-web/pull/29619)). Contributed by @t3chguy.
+* Fix missing ambiguous url tooltips on VChat Desktop ([#29619](https://github.com/element-hq/element-web/pull/29619)). Contributed by @t3chguy.
 * New room list: fix spacing and padding ([#29607](https://github.com/element-hq/element-web/pull/29607)). Contributed by @florianduros.
 * Make fetchdep check out matching branch name ([#29601](https://github.com/element-hq/element-web/pull/29601)). Contributed by @dbkr.
 * Fix MFileBody fileName not considering `filename` ([#29589](https://github.com/element-hq/element-web/pull/29589)). Contributed by @t3chguy.
@@ -730,7 +730,7 @@ Changes in [1.11.95](https://github.com/element-hq/element-web/releases/tag/v1.1
 * Use EditInPlace control for Identity Server picker to improve a11y ([#29280](https://github.com/element-hq/element-web/pull/29280)). Contributed by @Half-Shot.
 * First step to add header to new room list ([#29320](https://github.com/element-hq/element-web/pull/29320)). Contributed by @florianduros.
 * Add Windows 64-bit arm link and remove 32-bit link on compatibility page ([#29312](https://github.com/element-hq/element-web/pull/29312)). Contributed by @t3chguy.
-* Honour the backup disable flag from Element X ([#29290](https://github.com/element-hq/element-web/pull/29290)). Contributed by @dbkr.
+* Honour the backup disable flag from VChat X ([#29290](https://github.com/element-hq/element-web/pull/29290)). Contributed by @dbkr.
 
 ## 🐛 Bug Fixes
 
@@ -752,7 +752,7 @@ Changes in [1.11.93](https://github.com/element-hq/element-web/releases/tag/v1.1
 ==================================================================================================
 ## ✨ Features
 
-* [backport] Dynamically load Element Web modules in Docker entrypoint ([#29358](https://github.com/element-hq/element-web/pull/29358)). Contributed by @t3chguy.
+* [backport] Dynamically load VChat Web modules in Docker entrypoint ([#29358](https://github.com/element-hq/element-web/pull/29358)). Contributed by @t3chguy.
 * ChangeRecoveryKey: error handling ([#29262](https://github.com/element-hq/element-web/pull/29262)). Contributed by @richvdh.
 * Dehydration: enable dehydrated device on "Set up recovery" ([#29265](https://github.com/element-hq/element-web/pull/29265)). Contributed by @richvdh.
 * Render reason for invite rejection. ([#29257](https://github.com/element-hq/element-web/pull/29257)). Contributed by @Half-Shot.
@@ -861,7 +861,7 @@ Changes in [1.11.88](https://github.com/element-hq/element-web/releases/tag/v1.1
 ==================================================================================================
 ## ✨ Features
 
-* Allow trusted Element Call widget to send and receive media encryption key to-device messages ([#28316](https://github.com/element-hq/element-web/pull/28316)). Contributed by @hughns.
+* Allow trusted VChat Call widget to send and receive media encryption key to-device messages ([#28316](https://github.com/element-hq/element-web/pull/28316)). Contributed by @hughns.
 * increase ringing timeout from 10 seconds to 90 seconds ([#28630](https://github.com/element-hq/element-web/pull/28630)). Contributed by @fkwp.
 * Add `Close` tooltip to dialog ([#28617](https://github.com/element-hq/element-web/pull/28617)). Contributed by @florianduros.
 * New UX for Share dialog ([#28598](https://github.com/element-hq/element-web/pull/28598)). Contributed by @florianduros.
@@ -900,7 +900,7 @@ Changes in [1.11.87](https://github.com/element-hq/element-web/releases/tag/v1.1
 ## 🐛 Bug Fixes
 
 * Add spinner when room encryption is loading in room settings ([#28535](https://github.com/element-hq/element-web/pull/28535)). Contributed by @florianduros.
-* Fix getOidcCallbackUrl for Element Desktop ([#28521](https://github.com/element-hq/element-web/pull/28521)). Contributed by @t3chguy.
+* Fix getOidcCallbackUrl for VChat Desktop ([#28521](https://github.com/element-hq/element-web/pull/28521)). Contributed by @t3chguy.
 * Filter out redacted poll votes to avoid crashing the Poll widget ([#28498](https://github.com/element-hq/element-web/pull/28498)). Contributed by @t3chguy.
 * Fix force tab complete not working since switching to React 18 createRoot API ([#28505](https://github.com/element-hq/element-web/pull/28505)). Contributed by @t3chguy.
 * Fix media captions in bubble layout ([#28480](https://github.com/element-hq/element-web/pull/28480)). Contributed by @tulir.
@@ -969,7 +969,7 @@ Changes in [1.11.83](https://github.com/element-hq/element-web/releases/tag/v1.1
 ==================================================================================================
 ## ✨ Features
 
-* Enable Element Call by default on release instances ([#28314](https://github.com/element-hq/element-web/pull/28314)). Contributed by @t3chguy.
+* Enable VChat Call by default on release instances ([#28314](https://github.com/element-hq/element-web/pull/28314)). Contributed by @t3chguy.
 
 
 
@@ -1021,7 +1021,7 @@ Changes in [1.11.80](https://github.com/element-hq/element-web/releases/tag/v1.1
 * Improve contrast for timestamps, date separators \& spotlight trigger ([#91](https://github.com/element-hq/matrix-react-sdk/pull/91)). Contributed by @t3chguy.
 * Open room settings on room header avatar click ([#88](https://github.com/element-hq/matrix-react-sdk/pull/88)). Contributed by @t3chguy.
 * Use `strong` over `b` for improved a11y semantics ([#41](https://github.com/element-hq/matrix-react-sdk/pull/41)). Contributed by @t3chguy.
-* Grant Element Call widget capabilities for "raise hand" feature ([#82](https://github.com/element-hq/matrix-react-sdk/pull/82)). Contributed by @AndrewFerr.
+* Grant VChat Call widget capabilities for "raise hand" feature ([#82](https://github.com/element-hq/matrix-react-sdk/pull/82)). Contributed by @AndrewFerr.
 * Mobile registration optimizations and tests ([#62](https://github.com/element-hq/matrix-react-sdk/pull/62)). Contributed by @langleyd.
 * Ignore chat effect when older than 48h ([#48](https://github.com/element-hq/matrix-react-sdk/pull/48)). Contributed by @florianduros.
 
@@ -1150,7 +1150,7 @@ Changes in [1.11.74](https://github.com/element-hq/element-web/releases/tag/v1.1
 
 ## 🐛 Bug Fixes
 
-* Update Element icons ([#27900](https://github.com/element-hq/element-web/pull/27900)). Contributed by @t3chguy.
+* Update VChat icons ([#27900](https://github.com/element-hq/element-web/pull/27900)). Contributed by @t3chguy.
 * Fix Jitsi by updating device mute updates over postMessage API ([#27858](https://github.com/element-hq/element-web/pull/27858)). Contributed by @t3chguy.
 * Fix formatting of rich text emotes ([#12862](https://github.com/matrix-org/matrix-react-sdk/pull/12862)). Contributed by @dbkr.
 * Fixed custom emotes background color #27745 ([#12798](https://github.com/matrix-org/matrix-react-sdk/pull/12798)). Contributed by @asimdelvi.
@@ -1183,12 +1183,12 @@ Changes in [1.11.72](https://github.com/element-hq/element-web/releases/tag/v1.1
 * Iterate design of right panel empty state ([#12796](https://github.com/matrix-org/matrix-react-sdk/pull/12796)). Contributed by @t3chguy.
 * Update styling of UserInfo right panel card ([#12788](https://github.com/matrix-org/matrix-react-sdk/pull/12788)). Contributed by @t3chguy.
 * Accessibility: Add Landmark navigation ([#12190](https://github.com/matrix-org/matrix-react-sdk/pull/12190)). Contributed by @akirk.
-* Let Element Call widget receive m.room.create ([#12710](https://github.com/matrix-org/matrix-react-sdk/pull/12710)). Contributed by @AndrewFerr.
-* Let Element Call widget set session memberships ([#12713](https://github.com/matrix-org/matrix-react-sdk/pull/12713)). Contributed by @AndrewFerr.
+* Let VChat Call widget receive m.room.create ([#12710](https://github.com/matrix-org/matrix-react-sdk/pull/12710)). Contributed by @AndrewFerr.
+* Let VChat Call widget set session memberships ([#12713](https://github.com/matrix-org/matrix-react-sdk/pull/12713)). Contributed by @AndrewFerr.
 * Update right panel base card styling to match Compound ([#12768](https://github.com/matrix-org/matrix-react-sdk/pull/12768)). Contributed by @t3chguy.
 * Align `widget_build_url_ignore_dm` with call behaviour switch between 1:1 and Widget ([#12760](https://github.com/matrix-org/matrix-react-sdk/pull/12760)). Contributed by @t3chguy.
 * Move integrations switch ([#12733](https://github.com/matrix-org/matrix-react-sdk/pull/12733)). Contributed by @dbkr.
-* Element-R: Report events with withheld keys separately to Posthog. ([#12755](https://github.com/matrix-org/matrix-react-sdk/pull/12755)). Contributed by @richvdh.
+* VChat-R: Report events with withheld keys separately to Posthog. ([#12755](https://github.com/matrix-org/matrix-react-sdk/pull/12755)). Contributed by @richvdh.
 
 ## 🐛 Bug Fixes
 
@@ -1213,7 +1213,7 @@ Changes in [1.11.71](https://github.com/element-hq/element-web/releases/tag/v1.1
 * Redesign room search interface ([#12677](https://github.com/matrix-org/matrix-react-sdk/pull/12677)). Contributed by @t3chguy.
 * Move language settings to 'preferences' ([#12723](https://github.com/matrix-org/matrix-react-sdk/pull/12723)). Contributed by @dbkr.
 * New layout selector ui in user settings ([#12676](https://github.com/matrix-org/matrix-react-sdk/pull/12676)). Contributed by @florianduros.
-* Prevent Element appearing in system media controls  ([#10995](https://github.com/matrix-org/matrix-react-sdk/pull/10995)). Contributed by @SuperKenVery.
+* Prevent VChat appearing in system media controls  ([#10995](https://github.com/matrix-org/matrix-react-sdk/pull/10995)). Contributed by @SuperKenVery.
 * Move the account management button ([#12663](https://github.com/matrix-org/matrix-react-sdk/pull/12663)). Contributed by @dbkr.
 * Disable profile controls if the HS doesn't allow them to be set ([#12652](https://github.com/matrix-org/matrix-react-sdk/pull/12652)). Contributed by @dbkr.
 * New theme ui in user settings ([#12576](https://github.com/matrix-org/matrix-react-sdk/pull/12576)). Contributed by @florianduros.
@@ -1286,7 +1286,7 @@ Changes in [1.11.69](https://github.com/element-hq/element-web/releases/tag/v1.1
 * Fix EditInPlace button styles ([#12589](https://github.com/matrix-org/matrix-react-sdk/pull/12589)). Contributed by @dbkr.
 * Fix incorrect assumptions about required fields in /search response ([#12575](https://github.com/matrix-org/matrix-react-sdk/pull/12575)). Contributed by @t3chguy.
 * Fix display of no avatar in avatar setting controls ([#12558](https://github.com/matrix-org/matrix-react-sdk/pull/12558)). Contributed by @dbkr.
-* Element-R: pass pickleKey in as raw key for indexeddb encryption ([#12543](https://github.com/matrix-org/matrix-react-sdk/pull/12543)). Contributed by @richvdh.
+* VChat-R: pass pickleKey in as raw key for indexeddb encryption ([#12543](https://github.com/matrix-org/matrix-react-sdk/pull/12543)). Contributed by @richvdh.
 
 
 
@@ -1381,7 +1381,7 @@ Changes in [1.11.65](https://github.com/element-hq/element-web/releases/tag/v1.1
 * TAC: Release Announcement ([#12380](https://github.com/matrix-org/matrix-react-sdk/pull/12380)). Contributed by @florianduros.
 * Show the call and share button if the user can create a guest link. ([#12385](https://github.com/matrix-org/matrix-react-sdk/pull/12385)). Contributed by @toger5.
 * Add analytics for mark all threads unread ([#12384](https://github.com/matrix-org/matrix-react-sdk/pull/12384)). Contributed by @dbkr.
-* Add `EventType.RoomEncryption` to the auto approve capabilities of Element Call widgets ([#12386](https://github.com/matrix-org/matrix-react-sdk/pull/12386)). Contributed by @toger5.
+* Add `EventType.RoomEncryption` to the auto approve capabilities of VChat Call widgets ([#12386](https://github.com/matrix-org/matrix-react-sdk/pull/12386)). Contributed by @toger5.
 
 ## 🐛 Bug Fixes
 
@@ -1423,7 +1423,7 @@ This is a hotfix release to fix a couple of issues: one where the client would s
 ## 🐛 Bug Fixes
 
 * Revert "Make EC widget theme reactive - Update widget url when the theme changes" ([#12383](https://github.com/matrix-org/matrix-react-sdk/pull/12383)) in order to fix widgets that require authentication.
-* Update to hotfixed js-sdk to fix an issue where Element could try to set a push rule in a loop.
+* Update to hotfixed js-sdk to fix an issue where VChat could try to set a push rule in a loop.
 
 
 
@@ -1437,7 +1437,7 @@ Changes in [1.11.62](https://github.com/element-hq/element-web/releases/tag/v1.1
 * TAC: Order rooms by most recent after notification level ([#12329](https://github.com/matrix-org/matrix-react-sdk/pull/12329)). Contributed by @florianduros.
 * Make EC widget theme reactive - Update widget url when the theme changes ([#12295](https://github.com/matrix-org/matrix-react-sdk/pull/12295)). Contributed by @toger5.
 * Refine styles of menus, toasts, popovers, and modals ([#12332](https://github.com/matrix-org/matrix-react-sdk/pull/12332)). Contributed by @robintown.
-* Element Call: fix widget shown while its still loading (`waitForIframeLoad=false`) ([#12292](https://github.com/matrix-org/matrix-react-sdk/pull/12292)). Contributed by @toger5.
+* VChat Call: fix widget shown while its still loading (`waitForIframeLoad=false`) ([#12292](https://github.com/matrix-org/matrix-react-sdk/pull/12292)). Contributed by @toger5.
 * Improve Forward Dialog a11y by switching to roving tab index interactions ([#12306](https://github.com/matrix-org/matrix-react-sdk/pull/12306)). Contributed by @t3chguy.
 * Call guest access link creation to join calls as a non registered user via the EC SPA ([#12259](https://github.com/matrix-org/matrix-react-sdk/pull/12259)). Contributed by @toger5.
 * Use `strong` element to semantically denote visually emphasised content ([#12320](https://github.com/matrix-org/matrix-react-sdk/pull/12320)). Contributed by @t3chguy.
@@ -1501,7 +1501,7 @@ Changes in [1.11.59](https://github.com/element-hq/element-web/releases/tag/v1.1
 * Use browser's font size instead of hardcoded `16px` as root font size ([#12246](https://github.com/matrix-org/matrix-react-sdk/pull/12246)). Contributed by @florianduros.
 * Revert "Use Compound primary colors for most actions" ([#12264](https://github.com/matrix-org/matrix-react-sdk/pull/12264)). Contributed by @florianduros.
 * Revert "Refine menu, toast, and popover colors" ([#12263](https://github.com/matrix-org/matrix-react-sdk/pull/12263)). Contributed by @florianduros.
-* Fix Native OIDC for Element Desktop ([#12253](https://github.com/matrix-org/matrix-react-sdk/pull/12253)). Contributed by @t3chguy.
+* Fix Native OIDC for VChat Desktop ([#12253](https://github.com/matrix-org/matrix-react-sdk/pull/12253)). Contributed by @t3chguy.
 * Improve client metadata used for OIDC dynamic registration ([#12257](https://github.com/matrix-org/matrix-react-sdk/pull/12257)). Contributed by @t3chguy.
 * Refine menu, toast, and popover colors ([#12247](https://github.com/matrix-org/matrix-react-sdk/pull/12247)). Contributed by @robintown.
 * Call the AsJson forms of import and exportRoomKeys ([#12233](https://github.com/matrix-org/matrix-react-sdk/pull/12233)). Contributed by @andybalaam.
@@ -1516,7 +1516,7 @@ Changes in [1.11.59](https://github.com/element-hq/element-web/releases/tag/v1.1
 * [Backport staging] Fix spurious session corruption error ([#12287](https://github.com/matrix-org/matrix-react-sdk/pull/12287)). Contributed by @RiotRobot.
 * Fix the space panel getting bigger when gaining a scroll bar ([#12267](https://github.com/matrix-org/matrix-react-sdk/pull/12267)). Contributed by @dbkr.
 * Fix gradients spacings on the space panel ([#12262](https://github.com/matrix-org/matrix-react-sdk/pull/12262)). Contributed by @dbkr.
-* Remove hardcoded `Element` in tac labs description ([#12266](https://github.com/matrix-org/matrix-react-sdk/pull/12266)). Contributed by @florianduros.
+* Remove hardcoded `VChat` in tac labs description ([#12266](https://github.com/matrix-org/matrix-react-sdk/pull/12266)). Contributed by @florianduros.
 * Fix branding in "migrating crypto" message ([#12265](https://github.com/matrix-org/matrix-react-sdk/pull/12265)). Contributed by @richvdh.
 * Use h1 as first heading in dialogs ([#12250](https://github.com/matrix-org/matrix-react-sdk/pull/12250)). Contributed by @dbkr.
 * Fix forced lowercase username in login/registration flows ([#9329](https://github.com/matrix-org/matrix-react-sdk/pull/9329)). Contributed by @vrifox.
@@ -1533,7 +1533,7 @@ Changes in [1.11.58](https://github.com/element-hq/element-web/releases/tag/v1.1
 ## ✨ Features
 
  * 🦀  🔒 **The flag to enable the Rust crypto implementation is now set to `true` by default. This means that without any additional configuration every new login will use the new cryptography implementation.**
-* Add Element call related functionality to new room header ([#12091](https://github.com/matrix-org/matrix-react-sdk/pull/12091)). Contributed by @toger5.
+* Add VChat call related functionality to new room header ([#12091](https://github.com/matrix-org/matrix-react-sdk/pull/12091)). Contributed by @toger5.
 * Add labs flag for Threads Activity Centre ([#12137](https://github.com/matrix-org/matrix-react-sdk/pull/12137)). Contributed by @florianduros.
 * Refactor element call lobby + skip lobby ([#12057](https://github.com/matrix-org/matrix-react-sdk/pull/12057)). Contributed by @toger5.
 * Hide the "Message" button in the sidebar if the CreateRooms components should not be shown ([#9271](https://github.com/matrix-org/matrix-react-sdk/pull/9271)). Contributed by @dhenneke.
@@ -1634,7 +1634,7 @@ Changes in [1.11.54](https://github.com/element-hq/element-web/releases/tag/v1.1
 * Fix editing event from search room view ([#11992](https://github.com/matrix-org/matrix-react-sdk/pull/11992)). Contributed by @t3chguy.
 * Fix timeline position when moving to a room and coming back ([#12055](https://github.com/matrix-org/matrix-react-sdk/pull/12055)). Contributed by @florianduros.
 * Fix threaded reply playwright tests ([#12070](https://github.com/matrix-org/matrix-react-sdk/pull/12070)). Contributed by @dbkr.
-* Element-R: fix repeated requests to enter 4S key during cross-signing reset ([#12059](https://github.com/matrix-org/matrix-react-sdk/pull/12059)). Contributed by @richvdh.
+* VChat-R: fix repeated requests to enter 4S key during cross-signing reset ([#12059](https://github.com/matrix-org/matrix-react-sdk/pull/12059)). Contributed by @richvdh.
 * Fix position of thumbnail in room timeline ([#12016](https://github.com/matrix-org/matrix-react-sdk/pull/12016)). Contributed by @anoopw3bdev.
 
 

@@ -331,8 +331,8 @@ export default class MatrixChat extends React.PureComponent<IProps, IState> {
      *  * If all else fails, present a login screen.
      */
     private async initSession(): Promise<void> {
-        // The Rust Crypto SDK will break if two Element instances try to use the same datastore at once, so
-        // make sure we are the only Element instance in town (on this browser/domain).
+        // The Rust Crypto SDK will break if two VChat instances try to use the same datastore at once, so
+        // make sure we are the only VChat instance in town (on this browser/domain).
         const platform = PlatformPeg.get();
         if (platform && !(await platform.getSessionLock(() => this.onSessionLockStolen()))) {
             // we failed to get the lock. onSessionLockStolen should already have been called, so nothing left to do.

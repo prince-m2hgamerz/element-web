@@ -12,11 +12,11 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 
 import { VirtualizedList, type IVirtualizedListProps } from "./VirtualizedList";
 
-const expectTabIndex = (element: Element, expected: string): void => {
+const expectTabIndex = (element: VChat, expected: string): void => {
     expect(element.getAttribute("tabindex")).toBe(expected);
 };
 
-const expectAttribute = (element: Element, attr: string, expected: string): void => {
+const expectAttribute = (element: VChat, attr: string, expected: string): void => {
     expect(element.getAttribute(attr)).toBe(expected);
 };
 

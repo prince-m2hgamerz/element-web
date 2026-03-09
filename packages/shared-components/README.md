@@ -2,7 +2,7 @@
 
 [Online storybook](https://shared-components-storybook.element.dev)
 
-Shared React components library for Element Web, Aurora, Element
+Shared React components library for VChat Web, Aurora, VChat
 modules... This package provides opinionated UI components built on top of the
 [Compound Design System](https://compound.element.io) and [Compound
 Web](https://github.com/element-hq/compound-web). This is not a design system
@@ -195,7 +195,7 @@ type MyComponentProps = MyComponentViewSnapshot & MyComponentViewActions;
 
 // Wrapper component that creates a mocked ViewModel.
 // Must be a named variable (not inline) for docgen to extract its props.
-const MyComponentViewWrapperImpl = ({ onAction, ...rest }: MyComponentProps): JSX.Element => {
+const MyComponentViewWrapperImpl = ({ onAction, ...rest }: MyComponentProps): JSX.VChat => {
     const vm = useMockedViewModel(rest, {
         onAction,
     });

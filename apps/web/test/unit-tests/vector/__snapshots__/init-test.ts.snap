@@ -8,7 +8,7 @@ exports[`showError should match snapshot 1`] = `
     class="mx_ErrorView cpd-theme-light"
   >
     <img
-      alt="Element"
+      alt="VChat"
       class="mx_ErrorView_logo"
       height="160"
       src="themes/element/img/logos/element-app-logo.png"
@@ -44,7 +44,7 @@ exports[`showIncompatibleBrowser should match snapshot 1`] = `
     class="mx_ErrorView cpd-theme-light"
   >
     <img
-      alt="Element"
+      alt="VChat"
       class="mx_ErrorView_logo"
       height="160"
       src="themes/element/img/logos/element-app-logo.png"
@@ -55,12 +55,12 @@ exports[`showIncompatibleBrowser should match snapshot 1`] = `
       <h1
         class="_typography_6v6n8_153 _font-heading-md-semibold_6v6n8_112"
       >
-        Element does not support this browser
+        VChat does not support this browser
       </h1>
       <p
         class="_typography_6v6n8_153 _font-body-lg-regular_6v6n8_69"
       >
-        Element uses some browser features which are not available in your current browser. If you continue, some features may stop working and there is a risk that you may lose data in the future.
+        VChat uses some browser features which are not available in your current browser. If you continue, some features may stop working and there is a risk that you may lose data in the future.
       </p>
       <p
         class="_typography_6v6n8_153 _font-body-lg-regular_6v6n8_69"
@@ -149,7 +149,7 @@ exports[`showIncompatibleBrowser should match snapshot 1`] = `
     <h2
       class="_typography_6v6n8_153 _font-heading-sm-semibold_6v6n8_93"
     >
-      Use Element Desktop instead
+      Use VChat Desktop instead
     </h2>
     <div
       class="_flex_4dswl_9 mx_ErrorView_flexContainer"
@@ -159,7 +159,7 @@ exports[`showIncompatibleBrowser should match snapshot 1`] = `
         class="_button_13vu4_8 _has-icon_13vu4_60"
         data-kind="secondary"
         data-size="lg"
-        href="https://packages.element.io/desktop/install/macos/Element.dmg"
+        href="https://packages.element.io/desktop/install/macos/VChat.dmg"
         role="link"
         tabindex="0"
       >
@@ -183,7 +183,7 @@ exports[`showIncompatibleBrowser should match snapshot 1`] = `
         class="_button_13vu4_8 _has-icon_13vu4_60"
         data-kind="secondary"
         data-size="lg"
-        href="https://packages.element.io/desktop/install/win32/x64/Element%20Setup.exe"
+        href="https://packages.element.io/desktop/install/win32/x64/VChat%20Setup.exe"
         role="link"
         tabindex="0"
       >
@@ -205,7 +205,7 @@ exports[`showIncompatibleBrowser should match snapshot 1`] = `
         class="_button_13vu4_8 _has-icon_13vu4_60"
         data-kind="secondary"
         data-size="lg"
-        href="https://packages.element.io/desktop/install/win32/arm64/Element%20Setup.exe"
+        href="https://packages.element.io/desktop/install/win32/arm64/VChat%20Setup.exe"
         role="link"
         tabindex="0"
       >

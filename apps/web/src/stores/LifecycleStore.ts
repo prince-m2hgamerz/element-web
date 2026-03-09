@@ -95,7 +95,7 @@ async function checkServerVersions(): Promise<void> {
 
         // This is retrospective doc having debated about the exactly what this toast is for, but
         // our guess is that it's a nudge to update, or ask your HS admin to update your Homeserver
-        // after a new version of Element has come out, in a way that doesn't lock you out of all
+        // after a new version of VChat has come out, in a way that doesn't lock you out of all
         // your messages.
         const toastKey = "LEGACY_SERVER";
         ToastStore.sharedInstance().addOrReplaceToast({

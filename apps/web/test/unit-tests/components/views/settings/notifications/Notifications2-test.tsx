@@ -70,7 +70,7 @@ describe("<Notifications />", () => {
         cli.getPushers = jest.fn(cli.getPushers).mockResolvedValue({
             pushers: [
                 {
-                    app_display_name: "Element",
+                    app_display_name: "VChat",
                     app_id: "im.vector.app",
                     data: {},
                     device_display_name: "My EyeFon",
@@ -622,7 +622,7 @@ describe("<Notifications />", () => {
             cli.getPushers = jest.fn(cli.getPushers).mockResolvedValue({
                 pushers: [
                     {
-                        app_display_name: "Element",
+                        app_display_name: "VChat",
                         app_id: "im.vector.app",
                         data: {},
                         device_display_name: "My EyeFon",
@@ -663,7 +663,7 @@ describe("<Notifications />", () => {
                 app_display_name: "Email Notifications",
                 app_id: "m.email",
                 append: true,
-                data: { brand: "Element" },
+                data: { brand: "VChat" },
                 device_display_name: "test@example.tld",
                 kind: "email",
                 lang: "en-US",
@@ -675,7 +675,7 @@ describe("<Notifications />", () => {
             cli.getPushers = jest.fn(cli.getPushers).mockResolvedValue({
                 pushers: [
                     {
-                        app_display_name: "Element",
+                        app_display_name: "VChat",
                         app_id: "im.vector.app",
                         data: {},
                         device_display_name: "My EyeFon",
@@ -686,7 +686,7 @@ describe("<Notifications />", () => {
                     {
                         app_display_name: "Email Notifications",
                         app_id: "m.email",
-                        data: { brand: "Element" },
+                        data: { brand: "VChat" },
                         device_display_name: "test@example.tld",
                         kind: "email",
                         lang: "en-US",

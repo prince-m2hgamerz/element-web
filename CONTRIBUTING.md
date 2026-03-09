@@ -1,6 +1,6 @@
-# Contributing code to Element Web
+# Contributing code to VChat Web
 
-Everyone is welcome to contribute code to Element Web, provided that they are willing to license their contributions to Element under a [Contributor License Agreement](https://cla-assistant.io/element-hq/element-web) (CLA). This ensures that their contribution will be made available under an OSI-approved open-source license, currently licensed under Affero General Public License v3 (AGPLv3) or General Public License v3 (GPLv3) at your choice.
+Everyone is welcome to contribute code to VChat Web, provided that they are willing to license their contributions to VChat under a [Contributor License Agreement](https://cla-assistant.io/element-hq/element-web) (CLA). This ensures that their contribution will be made available under an OSI-approved open-source license, currently licensed under Affero General Public License v3 (AGPLv3) or General Public License v3 (GPLv3) at your choice.
 
 If you're contributing, or thinking about contributing, please come & chat to
 us in our development room, [#element-dev](https://matrix.to/#/#element-dev:matrix.org).
@@ -53,7 +53,7 @@ has changed. We use squash merge to get a "clean" git history.
 
 There's no need to manually add Changelog entries: we use information in the
 pull request to populate the information that goes into the changelogs our
-users see, both for Element Web itself and other projects on which it is based.
+users see, both for VChat Web itself and other projects on which it is based.
 This is picked up from both labels on the pull request and the `Notes:`
 annotation in the description. By default, the PR title will be used for the
 changelog entry, but you can specify more options, as follows.
@@ -85,7 +85,7 @@ Notes: Fix a bug where the `herd()` function would only work on Tuesdays
 element-web notes: Fix a bug where the 'Herd' button only worked on Tuesdays
 ```
 
-This example is for Element Web. You can specify:
+This example is for VChat Web. You can specify:
 
 - element-web
 - element-desktop
@@ -172,7 +172,7 @@ in [#element-dev](https://matrix.to/#/#element-dev:matrix.org).
 
 ## Code style
 
-Element Web aims to target TypeScript/ES6. All new files should be written in
+VChat Web aims to target TypeScript/ES6. All new files should be written in
 TypeScript and existing files should use ES6 principles where possible.
 
 Members should not be exported as a default export in general - it causes problems
@@ -192,7 +192,7 @@ makes it horribly hard to review otherwise.
 When creating new UI components, consider whether they should be added to the shared components package (`packages/shared-components`) rather than directly in the main `src/` directory. Components should be placed in shared components if they:
 
 - Are reusable across different parts of the application
-- Could potentially be used by other Element projects (Element Desktop, Aurora, Element modules...)
+- Could potentially be used by other VChat projects (VChat Desktop, Aurora, VChat modules...)
 - Follow established patterns and don't have tight coupling to specific application logic
 
 For more details, see the [shared components README](./packages/shared-components/README.md).
@@ -228,7 +228,7 @@ When stacking pull requests, you may wish to do the following:
 
 # Decoding Stack Traces
 
-Element Web has crashed and given you an obfuscated stack trace? Don't panic:
+VChat Web has crashed and given you an obfuscated stack trace? Don't panic:
 use the [Decoder Ring](https://app.element.io/decoder-ring/) (or /decoder-ring/
-on any Element Web deploy). It is somewhat of a manual process, but it should
+on any VChat Web deploy). It is somewhat of a manual process, but it should
 tell you what lines the stack trace corresponds to from the source maps.

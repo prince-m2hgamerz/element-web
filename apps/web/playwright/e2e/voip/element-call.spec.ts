@@ -16,8 +16,8 @@ import type { Credentials } from "../../plugins/homeserver";
 import { Bot } from "../../pages/bot";
 import { isDendrite } from "../../plugins/homeserver/dendrite";
 
-// Load a copy of our fake Element Call app, and the latest widget API.
-// The fake call app does *just* enough to convince Element Web that a call is ongoing
+// Load a copy of our fake VChat Call app, and the latest widget API.
+// The fake call app does *just* enough to convince VChat Web that a call is ongoing
 // and functions like PiP work. It does not actually do anything though, to limit the
 // surface we test.
 const widgetApi = readFile(fileURLToPath(import.meta.resolve("matrix-widget-api/dist/api.min.js")), "utf-8");
@@ -99,7 +99,7 @@ test.use({
     },
 });
 
-test.describe("Element Call", () => {
+test.describe("VChat Call", () => {
     test.use({
         config: {
             element_call: {
@@ -117,7 +117,7 @@ test.describe("Element Call", () => {
     });
 
     test.beforeEach(async ({ page, user, app }) => {
-        // Mock a widget page. We use a fake version of Element Call here.
+        // Mock a widget page. We use a fake version of VChat Call here.
         // We should match on things after .html as these widgets get a ton of extra params.
         await page.route(/\/widget.html.+/, async (route) => {
             await route.fulfill({
@@ -152,7 +152,7 @@ test.describe("Element Call", () => {
             await expect(page.getByText("Bob and one other were invited and joined")).toBeVisible();
 
             await page.getByRole("button", { name: "Video call" }).click();
-            await page.getByRole("menuitem", { name: "Element Call" }).click();
+            await page.getByRole("menuitem", { name: "VChat Call" }).click();
 
             const frameUrlStr = await page.locator("iframe").getAttribute("src");
             await expect(frameUrlStr).toBeDefined();
@@ -177,7 +177,7 @@ test.describe("Element Call", () => {
 
             await page.getByRole("button", { name: "Video call" }).click();
             await page.keyboard.down("Shift");
-            await page.getByRole("menuitem", { name: "Element Call" }).click();
+            await page.getByRole("menuitem", { name: "VChat Call" }).click();
             await page.keyboard.up("Shift");
 
             const frameUrlStr = await page.locator("iframe").getAttribute("src");
@@ -295,7 +295,7 @@ test.describe("Element Call", () => {
             await expect(page.getByText("Bob joined the room")).toBeVisible();
 
             await page.getByRole("button", { name: "Video call" }).click();
-            await page.getByRole("menuitem", { name: "Element Call" }).click();
+            await page.getByRole("menuitem", { name: "VChat Call" }).click();
             const frameUrlStr = await page.locator("iframe").getAttribute("src");
 
             await expect(frameUrlStr).toBeDefined();
@@ -312,7 +312,7 @@ test.describe("Element Call", () => {
 
             await page.getByRole("button", { name: "Video call" }).click();
             await page.keyboard.down("Shift");
-            await page.getByRole("menuitem", { name: "Element Call" }).click();
+            await page.getByRole("menuitem", { name: "VChat Call" }).click();
             await page.keyboard.up("Shift");
             const frameUrlStr = await page.locator("iframe").getAttribute("src");
 
@@ -473,7 +473,7 @@ test.describe("Element Call", () => {
                 await page.getByTestId("join-call-button").click();
             } else {
                 await page.getByRole("button", { name: "Video call" }).click();
-                await page.getByRole("menuitem", { name: "Element Call" }).click();
+                await page.getByRole("menuitem", { name: "VChat Call" }).click();
             }
             const iframe = page.locator("iframe");
             await expect(iframe).toBeVisible();
@@ -482,7 +482,7 @@ test.describe("Element Call", () => {
             await callFrame.getByRole("button", { name: "Join Call" }).click();
             await expect(callFrame.getByText("In call", { exact: true })).toBeVisible();
 
-            // Wait for Element Web to pickup the RTC session and update the room list entry.
+            // Wait for VChat Web to pickup the RTC session and update the room list entry.
             await expect(await page.getByTestId("notification-decoration")).toBeVisible();
         }
 
@@ -631,7 +631,7 @@ test.describe("Element Call", () => {
 
         test.beforeEach(async ({ page, user, app }) => {
             // use a specific widget to reproduce the bug.
-            // Mock a widget page. We use a fake version of Element Call here.
+            // Mock a widget page. We use a fake version of VChat Call here.
             // We should match on things after .html as these widgets get a ton of extra params.
             await page.route(/\/widget-with-send.html.+/, async (route) => {
                 await route.fulfill({
@@ -670,7 +670,7 @@ test.describe("Element Call", () => {
             ).toBeVisible();
 
             await page
-                .locator('iframe[title="Element Call"]')
+                .locator('iframe[title="VChat Call"]')
                 .contentFrame()
                 .getByRole("button", { name: "Send Room Message" })
                 .click();

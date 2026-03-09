@@ -152,7 +152,7 @@ interface CallEventProps {
 }
 
 /**
- * An event tile representing an active or historical Element call.
+ * An event tile representing an active or historical VChat call.
  */
 export const CallEvent = ({ mxEvent, ref }: CallEventProps): JSX.Element => {
     const client = useContext(MatrixClientContext);

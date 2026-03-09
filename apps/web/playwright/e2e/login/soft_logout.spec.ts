@@ -12,7 +12,7 @@ import { interceptRequestsWithSoftLogout } from "./utils";
 test.use({
     displayName: "Alice",
     config: {
-        // The only thing that we really *need* (otherwise Element refuses to load) is a default homeserver.
+        // The only thing that we really *need* (otherwise VChat refuses to load) is a default homeserver.
         // We point that to a guaranteed-invalid domain.
         default_server_config: {
             "m.homeserver": {

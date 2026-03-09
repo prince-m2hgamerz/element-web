@@ -624,7 +624,7 @@ export interface WidgetGenerationParameters {
 }
 
 /**
- * A group call using MSC3401 and Element Call as a backend.
+ * A group call using MSC3401 and VChat Call as a backend.
  * (somewhat cheekily named)
  */
 export class ElementCall extends Call {
@@ -644,7 +644,7 @@ export class ElementCall extends Call {
     public widgetGenerationParameters: WidgetGenerationParameters = {};
 
     /**
-     * Calculate the correct intent (and associated parameters) for an Element Call room. Paarameters
+     * Calculate the correct intent (and associated parameters) for a VChat Call room. Paarameters
      * will be applied to the `params` instance.
      *
      * @param params Existing URL parameters
@@ -702,7 +702,7 @@ export class ElementCall extends Call {
     }
 
     /**
-     * Calculate the correct analytics parameters for an Element Call room. Paarameters
+     * Calculate the correct analytics parameters for a VChat Call room. Paarameters
      * will be applied to the `params` instance.
      *
      * @param params Existing URL parameters
@@ -735,8 +735,8 @@ export class ElementCall extends Call {
     }
 
     /**
-     * Generate the correct Element Call widget URL for creating or joining a call in this room.
-     * Unless `Developer.elementCallUrl` is set, the widget will use the embedded Element Call package.
+     * Generate the correct VChat Call widget URL for creating or joining a call in this room.
+     * Unless `Developer.elementCallUrl` is set, the widget will use the embedded VChat Call package.
      *
      * @param client
      * @param roomId
@@ -750,7 +750,7 @@ export class ElementCall extends Call {
             : // this strips hash fragment from baseUrl
               new URL("./widgets/element-call/index.html#", window.location.href);
 
-        // Splice together the Element Call URL for this call
+        // Splice together the VChat Call URL for this call
         // Parameters can be found in https://github.com/element-hq/element-call/blob/livekit/src/UrlParams.ts.
         const params = new URLSearchParams({
             // Template variables are used, so that this can be configured using the widget data.
@@ -818,14 +818,14 @@ export class ElementCall extends Call {
             return ecWidget;
         }
 
-        // To use Element Call without touching room state, we create a virtual
+        // To use VChat Call without touching room state, we create a virtual
         // widget (one that doesn't have a corresponding state event)
         const url = ElementCall.generateWidgetUrl(client, roomId);
         return WidgetStore.instance.addVirtualWidget(
             {
                 id: secureRandomString(24), // So that it's globally unique
                 creatorUserId: client.getUserId()!,
-                name: "Element Call",
+                name: "VChat Call",
                 type: WidgetType.CALL.preferred,
                 url: url.toString(),
                 waitForIframeLoad: false,
@@ -836,7 +836,7 @@ export class ElementCall extends Call {
     }
 
     /**
-     * Get the correct intent for a widget, so that Element Call presents the correct
+     * Get the correct intent for a widget, so that VChat Call presents the correct
      * default config.
      * @param client The matrix client.
      * @param roomId

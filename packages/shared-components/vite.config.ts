@@ -17,7 +17,7 @@ export default defineConfig({
     build: {
         lib: {
             entry: resolve(__dirname, "src/index.ts"),
-            name: "Element Web Shared Components",
+            name: "VChat Web Shared Components",
             // the proper extensions will be added
             fileName: "element-web-shared-components",
         },

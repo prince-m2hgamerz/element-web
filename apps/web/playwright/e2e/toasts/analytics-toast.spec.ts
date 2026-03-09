@@ -33,12 +33,12 @@ test.describe("Analytics Toast", () => {
         });
 
         test("should show an analytics toast which can be accepted", async ({ user, toasts }) => {
-            await toasts.acceptToast("Help improve Element");
+            await toasts.acceptToast("Help improve VChat");
             await toasts.assertNoToasts();
         });
 
         test("should show an analytics toast which can be rejected", async ({ user, toasts }) => {
-            await toasts.rejectToast("Help improve Element");
+            await toasts.rejectToast("Help improve VChat");
             await toasts.assertNoToasts();
         });
     });

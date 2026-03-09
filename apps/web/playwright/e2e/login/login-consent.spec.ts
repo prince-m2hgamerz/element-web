@@ -85,7 +85,7 @@ async function login(page: Page, homeserver: HomeserverInstance, credentials: Cr
 test.use(consentHomeserver);
 test.use({
     config: {
-        // The only thing that we really *need* (otherwise Element refuses to load) is a default homeserver.
+        // The only thing that we really *need* (otherwise VChat refuses to load) is a default homeserver.
         // We point that to a guaranteed-invalid domain.
         default_server_config: {
             "m.homeserver": {
@@ -126,7 +126,7 @@ test.describe("Login", () => {
             await page.goto("/");
 
             // Should give us the welcome page initially
-            await expect(page.getByRole("heading", { name: "Welcome to Element!" })).toBeVisible();
+            await expect(page.getByRole("heading", { name: "Welcome to VChat!" })).toBeVisible();
 
             // Start the login process
             await expect(axe).toHaveNoViolations();

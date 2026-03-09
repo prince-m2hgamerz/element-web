@@ -28,11 +28,11 @@ test.describe("Voice & Video room settings tab", () => {
     });
 
     test(
-        "should be able to toggle on Element Call in the room",
+        "should be able to toggle on VChat Call in the room",
         { tag: "@screenshot" },
         async ({ page, app, user, axe }) => {
             await page.setViewportSize({ width: 1024, height: 1400 });
-            const callToggle = settings.getByLabel("Enable Element Call as an additional calling option in this room");
+            const callToggle = settings.getByLabel("Enable VChat Call as an additional calling option in this room");
             await callToggle.check();
             axe.disableRules("color-contrast"); // XXX: Inheriting colour contrast issues from room view.
             await expect(axe).toHaveNoViolations();

@@ -7,28 +7,28 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=element-web&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=element-web)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=element-web&metric=bugs)](https://sonarcloud.io/summary/new_code?id=element-web)
 
-# Element
+# VChat
 
-Element (formerly known as Vector and Riot) is a Matrix web & desktop client built using the [Matrix
+VChat (formerly known as Vector and Riot) is a Matrix web & desktop client built using the [Matrix
 JS SDK](https://github.com/matrix-org/matrix-js-sdk).
 
 # Supported Environments
 
-Element has several tiers of support for different environments:
+VChat has several tiers of support for different environments:
 
 - Supported
     - Definition:
         - Issues **actively triaged**, regressions **block** the release
     - Last 2 major versions of Chrome, Firefox, and Edge on desktop OSes
     - Last 2 versions of Safari
-    - Latest release of official Element Desktop app on desktop OSes
+    - Latest release of official VChat Desktop app on desktop OSes
     - Desktop OSes means macOS, Windows, and Linux versions for desktop devices
       that are actively supported by the OS vendor and receive security updates
 - Best effort
     - Definition:
         - Issues **accepted**, regressions **do not block** the release
-        - The wider Element Products (including Element Call and the Enterprise Server Suite) do still not officially support these browsers.
-        - The element web project and its contributors should keep the client functioning and gracefully degrade where other sibling features (E.g. Element Call) may not function.
+        - The wider VChat Products (including VChat Call and the Enterprise Server Suite) do still not officially support these browsers.
+        - The element web project and its contributors should keep the client functioning and gracefully degrade where other sibling features (E.g. VChat Call) may not function.
     - Last major release of Firefox ESR and Chrome/Edge Extended Stable
 - Community Supported
     - Definition:
@@ -41,34 +41,34 @@ Element has several tiers of support for different environments:
 
 The period of support for these tiers should last until the releases specified above, plus 1 app release cycle(2 weeks). In the case of Firefox ESR this is extended further to allow it land in Debian Stable.
 
-For accessing Element on an Android or iOS device, we currently recommend the
+For accessing VChat on an Android or iOS device, we currently recommend the
 native apps [element-x-android](https://github.com/element-hq/element-x-android)
 and [element-x-ios](https://github.com/element-hq/element-x-ios).
 
 # Getting Started
 
-The easiest way to test Element is to just use the hosted copy at <https://app.element.io>.
+The easiest way to test VChat is to just use the hosted copy at <https://app.element.io>.
 The `develop` branch is continuously deployed to <https://develop.element.io>
 for those who like living dangerously.
 
-To host your own instance of Element see [Installing Element Web](docs/install.md).
+To host your own instance of VChat see [Installing VChat Web](docs/install.md).
 
-To install Element as a desktop application, see [Running as a desktop app](#running-as-a-desktop-app) below.
+To install VChat as a desktop application, see [Running as a desktop app](#running-as-a-desktop-app) below.
 
 ---
 
 # Monorepo
 
-This repository is a monorepo hosting Element Web and other related projects in various subdirectories.
+This repository is a monorepo hosting VChat Web and other related projects in various subdirectories.
 You can read more about the structure [here](docs/monorepo.md).
 
-# Element Web
+# VChat Web
 
-To learn more about Element Web [click here](apps/web/README.md)
+To learn more about VChat Web [click here](apps/web/README.md)
 
 # Running as a Desktop app
 
-Element can also be run as a desktop app, wrapped in Electron. You can download a
+VChat can also be run as a desktop app, wrapped in Electron. You can download a
 pre-built version from <https://element.io/get-started> or, if you prefer,
 build it yourself.
 
@@ -104,14 +104,14 @@ Copyright (c) 2014-2017 OpenMarket Ltd
 Copyright (c) 2017 Vector Creations Ltd
 Copyright (c) 2017-2025 New Vector Ltd
 
-This software is multi licensed by New Vector Ltd (Element). It can be used either:
+This software is multi licensed by New Vector Ltd (VChat). It can be used either:
 
 (1) for free under the terms of the GNU Affero General Public License (as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version); OR
 
 (2) for free under the terms of the GNU General Public License (as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version); OR
 
-(3) under the terms of a paid-for Element Commercial License agreement between you and Element (the terms of which may vary depending on what you and Element have agreed to).
+(3) under the terms of a paid-for VChat Commercial License agreement between you and VChat (the terms of which may vary depending on what you and VChat have agreed to).
 Unless required by applicable law or agreed to in writing, software distributed under the Licenses is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licenses for the specific language governing permissions and limitations under the Licenses.
 
 Please contact [licensing@element.io](mailto:licensing@element.io) to purchase
-an Element commercial license for this software.
+a VChat commercial license for this software.

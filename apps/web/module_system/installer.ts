@@ -155,7 +155,7 @@ function getTopLevelDependencyVersion(dep: string): string {
         What a dependency tree looks like:
         {
           "version": "1.10.13",
-          "name": "element-web",
+          "name": "vchat-web",
           "dependencies": {
             "@matrix-org/react-sdk-module-api": {
               "version": "0.0.1",

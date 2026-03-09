@@ -386,7 +386,7 @@ type Languages = {
 
 /**
  * Sets the language for the application.
- * In Element web,`languageHandler.setLanguage` should be used instead.
+ * In VChat web,`languageHandler.setLanguage` should be used instead.
  * @param language
  */
 export async function setLanguage(language: string): Promise<void> {

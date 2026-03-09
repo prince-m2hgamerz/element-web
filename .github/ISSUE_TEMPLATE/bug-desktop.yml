@@ -1,5 +1,5 @@
-name: Bug report for the Element desktop app (not in a browser)
-description: File a bug report if you are using the desktop Element application.
+name: Bug report for the VChat desktop app (not in a browser)
+description: File a bug report if you are using the desktop VChat application.
 labels: [T-Defect, A-Electron]
 body:
     - type: markdown
@@ -43,7 +43,7 @@ body:
       attributes:
           label: Application version
           description: You can find the version information in Settings -> Help & About.
-          placeholder: e.g. Element version 1.7.34, olm version 3.2.3
+          placeholder: e.g. VChat version 1.7.34, olm version 3.2.3
       validations:
           required: false
     - type: input

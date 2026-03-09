@@ -16,7 +16,7 @@ import { type DeepReadonly, type Defaultize } from "./@types/common";
 
 // see element-web config.md for docs, or the IConfigOptions interface for dev docs
 export const DEFAULTS: DeepReadonly<IConfigOptions> = {
-    brand: "Element",
+    brand: "VChat",
     help_url: "https://element.io/help",
     help_encryption_url: "https://element.io/help#encryption",
     help_key_storage_url: "https://element.io/help#encryption5",
@@ -31,7 +31,7 @@ export const DEFAULTS: DeepReadonly<IConfigOptions> = {
     },
     element_call: {
         use_exclusively: false,
-        brand: "Element Call",
+        brand: "VChat Call",
     },
 
     // @ts-ignore - we deliberately use the camelCase version here so we trigger
@@ -55,9 +55,9 @@ export const DEFAULTS: DeepReadonly<IConfigOptions> = {
         available: true,
         logo: "vector-icons/1024.png",
         url: "https://element.io/download",
-        url_macos: "https://packages.element.io/desktop/install/macos/Element.dmg",
-        url_win64: "https://packages.element.io/desktop/install/win32/x64/Element%20Setup.exe",
-        url_win64arm: "https://packages.element.io/desktop/install/win32/arm64/Element%20Setup.exe",
+        url_macos: "https://packages.element.io/desktop/install/macos/VChat.dmg",
+        url_win64: "https://packages.element.io/desktop/install/win32/x64/VChat%20Setup.exe",
+        url_win64arm: "https://packages.element.io/desktop/install/win32/arm64/VChat%20Setup.exe",
         url_linux: "https://element.io/download#linux",
     },
     mobile_builds: {

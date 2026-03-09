@@ -121,7 +121,7 @@ export function useKeyStoragePanelViewModel(): KeyStoragePanelState {
                         await crypto.disableKeyStorage();
 
                         // Set a flag to say that the user doesn't want key backup.
-                        // Element X uses this to determine whether to set up automatically,
+                        // VChat X uses this to determine whether to set up automatically,
                         // so this will stop EX turning it back on spontaneously.
                         await matrixClient.setAccountData(BACKUP_DISABLED_ACCOUNT_DATA_KEY, { disabled: true });
                     }

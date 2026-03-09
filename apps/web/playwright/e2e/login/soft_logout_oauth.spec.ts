@@ -13,7 +13,7 @@ import { legacyOAuthHomeserver } from "../../plugins/homeserver/synapse/legacyOA
 test.use({
     displayName: "Alice",
     config: {
-        // The only thing that we really *need* (otherwise Element refuses to load) is a default homeserver.
+        // The only thing that we really *need* (otherwise VChat refuses to load) is a default homeserver.
         // We point that to a guaranteed-invalid domain.
         default_server_config: {
             "m.homeserver": {
@@ -48,7 +48,7 @@ test.describe("Soft logout with SSO user", () => {
         // click the submit button
         await page.getByRole("button", { name: "Submit" }).click();
 
-        // Synapse prompts us to grant permission to Element
+        // Synapse prompts us to grant permission to VChat
         await expect(page.getByRole("heading", { name: "Continue to your account" })).toBeVisible();
         await page.getByRole("link", { name: "Continue" }).click();
 

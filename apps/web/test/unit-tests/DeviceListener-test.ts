@@ -172,7 +172,7 @@ describe("DeviceListener", () => {
 
                 expect(mockClient!.setAccountData).toHaveBeenCalledWith(
                     `io.element.matrix_client_information.${deviceId}`,
-                    { name: "Element", url: "localhost", version: "1.2.3" },
+                    { name: "VChat", url: "localhost", version: "1.2.3" },
                 );
             });
 
@@ -202,7 +202,7 @@ describe("DeviceListener", () => {
 
                 expect(mockClient!.setAccountData).toHaveBeenCalledWith(
                     `io.element.matrix_client_information.${deviceId}`,
-                    { name: "Element", url: "localhost", version: "1.2.3" },
+                    { name: "VChat", url: "localhost", version: "1.2.3" },
                 );
             });
         });
@@ -266,7 +266,7 @@ describe("DeviceListener", () => {
 
                 expect(mockClient!.setAccountData).toHaveBeenCalledWith(
                     `io.element.matrix_client_information.${deviceId}`,
-                    { name: "Element", url: "localhost", version: "1.2.3" },
+                    { name: "VChat", url: "localhost", version: "1.2.3" },
                 );
             });
         });

@@ -126,7 +126,7 @@ export const useRoomCall = (
     useEffect(() => {
         if (useElementCallExclusively && !serverIsConfiguredForElementCall) {
             logger.warn(
-                "Element Call is configured to be used exclusively, but the server is not configured with a transport",
+                "VChat Call is configured to be used exclusively, but the server is not configured with a transport",
             );
         }
     }, [useElementCallExclusively, serverIsConfiguredForElementCall]);
@@ -189,7 +189,7 @@ export const useRoomCall = (
             options.push(PlatformCallType.JitsiCall);
         }
         if (hasGroupCall && WidgetType.CALL.matches(groupCall.widget.type)) {
-            // only allow joining the ongoing Element call if there is one.
+            // only allow joining the ongoing VChat call if there is one.
             return [PlatformCallType.ElementCall];
         }
         return options;

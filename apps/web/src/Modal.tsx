@@ -415,7 +415,7 @@ export class ModalManager extends TypedEventEmitter<ModalManagerEvent, HandlerMa
 
     private async reRender(): Promise<void> {
         if (this.modals.length === 0 && !this.priorityModal && !this.staticModal) {
-            // If there is no modal to render, make all of Element available
+            // If there is no modal to render, make all of VChat available
             // to screen reader users again
             defaultDispatcher.dispatch({
                 action: "aria_unhide_main_app",

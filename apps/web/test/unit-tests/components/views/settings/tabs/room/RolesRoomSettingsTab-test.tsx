@@ -73,7 +73,7 @@ describe("RolesRoomSettingsTab", () => {
         expect(container.querySelector(`[placeholder="@admin:server"]`)).toBeDisabled();
     });
 
-    describe("Element Call", () => {
+    describe("VChat Call", () => {
         const setGroupCallsEnabled = (val: boolean): void => {
             jest.spyOn(SettingsStore, "getValue").mockImplementation((name: string): any => {
                 if (name === "feature_group_calls") return val;
@@ -81,27 +81,27 @@ describe("RolesRoomSettingsTab", () => {
         };
 
         const getStartCallSelect = (tab: RenderResult): HTMLElement => {
-            return tab.container.querySelector("select[label='Start Element Call calls']")!;
+            return tab.container.querySelector("select[label='Start VChat Call calls']")!;
         };
 
         const getStartCallSelectedOption = (tab: RenderResult): HTMLElement => {
-            return tab.container.querySelector("select[label='Start Element Call calls'] option:checked")!;
+            return tab.container.querySelector("select[label='Start VChat Call calls'] option:checked")!;
         };
 
         const getJoinCallSelect = (tab: RenderResult): HTMLElement => {
-            return tab.container.querySelector("select[label='Join Element Call calls']")!;
+            return tab.container.querySelector("select[label='Join VChat Call calls']")!;
         };
 
         const getJoinCallSelectedOption = (tab: RenderResult): HTMLElement => {
-            return tab.container.querySelector("select[label='Join Element Call calls'] option:checked")!;
+            return tab.container.querySelector("select[label='Join VChat Call calls'] option:checked")!;
         };
 
-        describe("Element Call enabled", () => {
+        describe("VChat Call enabled", () => {
             beforeEach(() => {
                 setGroupCallsEnabled(true);
             });
 
-            describe("Join Element calls", () => {
+            describe("Join VChat calls", () => {
                 it("defaults to moderator for joining calls", async () => {
                     expect(getJoinCallSelectedOption(await renderTab())?.textContent).toBe("Moderator");
                 });
@@ -122,7 +122,7 @@ describe("RolesRoomSettingsTab", () => {
                 });
             });
 
-            describe("Start Element calls", () => {
+            describe("Start VChat calls", () => {
                 it("defaults to moderator for starting calls", async () => {
                     expect(getStartCallSelectedOption(await renderTab())?.textContent).toBe("Moderator");
                 });

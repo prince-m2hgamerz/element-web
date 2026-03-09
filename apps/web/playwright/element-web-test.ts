@@ -45,7 +45,7 @@ export interface CredentialsWithDisplayName extends Credentials {
 export interface TestFixtures extends BaseTestFixtures {
     /**
      * The same as {@link https://playwright.dev/docs/api/class-fixtures#fixtures-page|`page`},
-     * but wraps the returned `Page` in a class of utilities for interacting with the Element-Web UI,
+     * but wraps the returned `Page` in a class of utilities for interacting with the VChat-Web UI,
      * {@link ElementAppPage}.
      */
     app: ElementAppPage;

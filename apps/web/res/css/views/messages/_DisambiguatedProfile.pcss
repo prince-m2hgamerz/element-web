@@ -27,6 +27,22 @@ Please see LICENSE files in the repository root for full details.
     }
 }
 
+.mx_VerifiedProfile {
+    display: inline-flex;
+    align-items: center;
+    min-width: 0;
+    max-width: 100%;
+
+    .mx_DisambiguatedProfile {
+        min-width: 0;
+    }
+
+    .mx_VerifiedProfile_badge {
+        align-self: flex-start;
+        margin-top: 1px;
+    }
+}
+
 /** Disambiguated profile needs to have a different layout in the member tile */
 .mx_MemberTileView .mx_DisambiguatedProfile {
     display: flex;
@@ -48,4 +64,8 @@ Please see LICENSE files in the repository root for full details.
         text-overflow: ellipsis;
         white-space: nowrap;
     }
+}
+
+.mx_MemberTileView .mx_VerifiedProfile {
+    align-items: flex-start;
 }

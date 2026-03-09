@@ -18,7 +18,7 @@ export type DeviceWithVerification = IMyDevice & {
     isVerified: boolean | null;
 };
 export type ExtendedDeviceAppInfo = {
-    // eg Element Web
+    // eg VChat Web
     appName?: string;
     appVersion?: string;
     url?: string;

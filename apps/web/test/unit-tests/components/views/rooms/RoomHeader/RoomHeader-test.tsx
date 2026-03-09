@@ -415,7 +415,7 @@ describe("RoomHeader", () => {
                     feature_group_calls: true,
                 },
             });
-            // Enable Element Call
+            // Enable VChat Call
             client._unstable_getRTCTransports = jest
                 .fn()
                 .mockResolvedValue([{ type: "livekit", livekit_service_url: "https://example.org" }]);
@@ -668,7 +668,7 @@ describe("RoomHeader", () => {
             const button = screen.getByRole("button", { name: "Video call" });
             expect(button).not.toHaveAttribute("aria-disabled", "true");
             await user.click(button);
-            const elementCallButton = screen.getByRole("menuitem", { name: "Element Call" });
+            const elementCallButton = screen.getByRole("menuitem", { name: "VChat Call" });
             const legacyCallButton = screen.getByRole("menuitem", { name: "Legacy Call" });
             expect(elementCallButton).toBeInTheDocument();
             expect(legacyCallButton).toBeInTheDocument();
@@ -685,7 +685,7 @@ describe("RoomHeader", () => {
             const button = screen.getByRole("button", { name: "Voice call" });
             expect(button).not.toHaveAttribute("aria-disabled", "true");
             await user.click(button);
-            const elementCallButton = screen.getByRole("menuitem", { name: "Element Call" });
+            const elementCallButton = screen.getByRole("menuitem", { name: "VChat Call" });
             const legacyCallButton = screen.getByRole("menuitem", { name: "Legacy Call" });
             expect(elementCallButton).toBeInTheDocument();
             expect(legacyCallButton).toBeInTheDocument();

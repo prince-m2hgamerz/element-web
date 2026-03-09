@@ -10,7 +10,7 @@ import { type Page, expect, type TestInfo } from "@playwright/test";
 
 import { type Credentials, type HomeserverInstance } from "../../plugins/homeserver";
 
-/** Visit the login page, choose to log in with "OAuth test", register a new account, and redirect back to Element
+/** Visit the login page, choose to log in with "OAuth test", register a new account, and redirect back to VChat
  */
 export async function doTokenRegistration(
     page: Page,
@@ -42,7 +42,7 @@ export async function doTokenRegistration(
     await expect(page.locator("#field-username-output")).toHaveText("");
     await page.getByRole("button", { name: "Continue" }).click();
 
-    // Synapse prompts us to grant permission to Element
+    // Synapse prompts us to grant permission to VChat
     page.getByRole("heading", { name: "Continue to your account" });
     await page.getByRole("link", { name: "Continue" }).click();
 

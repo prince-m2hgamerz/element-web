@@ -34,7 +34,7 @@ function openRoom(cli: MatrixClient, args: string | undefined, autoJoin: boolean
         const parsedUrl = new URL(params[0]);
         const hostname = parsedUrl.host || parsedUrl.hostname; // takes first non-falsey value
 
-        // if we're using a Element permalink handler, this will catch it before we get much further.
+        // if we're using a VChat permalink handler, this will catch it before we get much further.
         // see below where we make assumptions about parsing the URL.
         if (isPermalinkHost(hostname)) {
             isPermalink = true;

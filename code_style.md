@@ -1,4 +1,4 @@
-# Element Web/Desktop code style guide
+# VChat Web/Desktop code style guide
 
 This code style applies to projects which the element-web team directly maintains or is reasonably
 adjacent to. As of writing, these are:
@@ -286,7 +286,7 @@ Inheriting all the rules of TypeScript, the following additionally apply:
 > [!NOTE]
 > We use PostCSS + some plugins to process our styles. It looks like SCSS, but actually it is not.
 
-**PostCSS should be use when working in the main Element Web codebase (not shared-components).**
+**PostCSS should be use when working in the main VChat Web codebase (not shared-components).**
 
 #### Naming and file structure
 

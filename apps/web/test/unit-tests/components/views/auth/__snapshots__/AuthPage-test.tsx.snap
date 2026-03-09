@@ -32,7 +32,7 @@ exports[`<AuthPage /> should match snapshot 1`] = `
         Blog
       </a>
       <a
-        href="https://mastodon.matrix.org/@Element"
+        href="https://mastodon.matrix.org/@VChat"
         rel="noreferrer noopener"
         target="_blank"
       >

@@ -664,7 +664,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Android"
+                "device_display_name": "VChat Android"
               },
               "signatures": {
                 "@vdhtest220101:matrix.org": {
@@ -829,7 +829,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element X Android"
+                "device_display_name": "VChat X Android"
               },
               "signatures": {
                 "@benoit.marty:matrix.org": {
@@ -850,7 +850,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Android"
+                "device_display_name": "VChat Android"
               },
               "signatures": {
                 "@benoit.marty:matrix.org": {
@@ -892,7 +892,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element X Android"
+                "device_display_name": "VChat X Android"
               },
               "signatures": {
                 "@benoit.marty:matrix.org": {
@@ -1302,7 +1302,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Nightly Desktop (macOS)"
+                "device_display_name": "VChat Nightly Desktop (macOS)"
               },
               "signatures": {
                 "@matthew:matrix.org": {
@@ -1323,7 +1323,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Android"
+                "device_display_name": "VChat Android"
               },
               "signatures": {
                 "@matthew:matrix.org": {
@@ -1365,7 +1365,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element iOS"
+                "device_display_name": "VChat iOS"
               },
               "signatures": {
                 "@matthew:matrix.org": {
@@ -1386,7 +1386,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element X Android"
+                "device_display_name": "VChat X Android"
               },
               "signatures": {
                 "@matthew:matrix.org": {
@@ -1407,7 +1407,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Nightly Desktop: macOS"
+                "device_display_name": "VChat Nightly Desktop: macOS"
               },
               "signatures": {
                 "@matthew:matrix.org": {
@@ -1470,7 +1470,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element X iOS"
+                "device_display_name": "VChat X iOS"
               },
               "signatures": {
                 "@matthew:matrix.org": {
@@ -1512,7 +1512,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Nightly Desktop: macOS"
+                "device_display_name": "VChat Nightly Desktop: macOS"
               },
               "signatures": {
                 "@matthew:matrix.org": {
@@ -1533,7 +1533,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element X iOS"
+                "device_display_name": "VChat X iOS"
               },
               "signatures": {
                 "@matthew:matrix.org": {
@@ -1554,7 +1554,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Nightly Desktop: macOS"
+                "device_display_name": "VChat Nightly Desktop: macOS"
               },
               "signatures": {
                 "@matthew:matrix.org": {
@@ -1575,7 +1575,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element X iOS"
+                "device_display_name": "VChat X iOS"
               },
               "signatures": {
                 "@matthew:matrix.org": {
@@ -1596,7 +1596,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element X iOS"
+                "device_display_name": "VChat X iOS"
               },
               "signatures": {
                 "@matthew:matrix.org": {
@@ -1957,7 +1957,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Android"
+                "device_display_name": "VChat Android"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -1978,7 +1978,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop (Linux)"
+                "device_display_name": "VChat Desktop (Linux)"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -1999,7 +1999,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Masaüstü (Linux)"
+                "device_display_name": "VChat Masaüstü (Linux)"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2020,7 +2020,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Masaüstü (Linux)"
+                "device_display_name": "VChat Masaüstü (Linux)"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2041,7 +2041,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Masaüstü (Linux)"
+                "device_display_name": "VChat Masaüstü (Linux)"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2062,7 +2062,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Masaüstü (Linux)"
+                "device_display_name": "VChat Masaüstü (Linux)"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2083,7 +2083,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Masaüstü (Linux)"
+                "device_display_name": "VChat Masaüstü (Linux)"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2104,7 +2104,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Masaüstü (Linux)"
+                "device_display_name": "VChat Masaüstü (Linux)"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2125,7 +2125,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Masaüstü (Linux)"
+                "device_display_name": "VChat Masaüstü (Linux)"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2146,7 +2146,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Masaüstü (Linux)"
+                "device_display_name": "VChat Masaüstü (Linux)"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2188,7 +2188,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2209,7 +2209,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2230,7 +2230,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Masaüstü (Linux)"
+                "device_display_name": "VChat Masaüstü (Linux)"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2251,7 +2251,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2272,7 +2272,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Masaüstü (Linux)"
+                "device_display_name": "VChat Masaüstü (Linux)"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2314,7 +2314,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2335,7 +2335,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2356,7 +2356,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2419,7 +2419,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2440,7 +2440,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2461,7 +2461,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2482,7 +2482,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2503,7 +2503,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2524,7 +2524,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2545,7 +2545,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2566,7 +2566,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2587,7 +2587,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Android"
+                "device_display_name": "VChat Android"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2608,7 +2608,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2629,7 +2629,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2650,7 +2650,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2671,7 +2671,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Desktop: Linux"
+                "device_display_name": "VChat Desktop: Linux"
               },
               "signatures": {
                 "@erkinalp:matrix.org": {
@@ -2757,7 +2757,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Android"
+                "device_display_name": "VChat Android"
               },
               "signatures": {
                 "@valere35:matrix.org": {
@@ -2778,7 +2778,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element Android"
+                "device_display_name": "VChat Android"
               },
               "signatures": {
                 "@valere35:matrix.org": {
@@ -2820,7 +2820,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element X iOS"
+                "device_display_name": "VChat X iOS"
               },
               "signatures": {
                 "@valere35:matrix.org": {
@@ -2927,7 +2927,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element - dbg Android"
+                "device_display_name": "VChat - dbg Android"
               },
               "signatures": {
                 "@valou35:matrix.org": {
@@ -2969,7 +2969,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element - dbg Android"
+                "device_display_name": "VChat - dbg Android"
               },
               "signatures": {
                 "@valou35:matrix.org": {
@@ -2990,7 +2990,7 @@
               "verified": 0,
               "known": false,
               "unsigned": {
-                "device_display_name": "Element iOS"
+                "device_display_name": "VChat iOS"
               },
               "signatures": {
                 "@valou35:matrix.org": {

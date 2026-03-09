@@ -41,7 +41,7 @@ declare module "matrix-js-sdk/src/types" {
         "im.vector.modular.widgets": IWidget | EmptyObject;
         [WIDGET_LAYOUT_EVENT_TYPE]: ILayoutStateEvent;
 
-        // Element custom state events
+        // VChat custom state events
         "im.vector.web.settings": Record<string, any>;
         "org.matrix.room.preview_urls": { disable: boolean };
 
@@ -69,7 +69,7 @@ declare module "matrix-js-sdk/src/types" {
         };
         // Device client information account data event
         [key: `io.element.matrix_client_information.${string}`]: DeviceClientInformation;
-        // Element settings account data events
+        // VChat settings account data events
         "im.vector.setting.breadcrumbs": { recent_rooms: string[] };
         "io.element.recent_emoji": { recent_emoji: string[] };
         "im.vector.setting.integration_provisioning": { enabled: boolean };

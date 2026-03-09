@@ -71,7 +71,7 @@ describe("Wrapper", () => {
 
         await waitForWelcomeComponent(matrixChatResult);
 
-        // Are not semantic elements because Element has a footer already.
+        // Are not semantic elements because VChat has a footer already.
         const header = screen.getByTestId("wrapper-header");
         const matrixChat = screen.getByTestId("wrapper-matrix-chat");
         const footer = screen.getByTestId("wrapper-footer");

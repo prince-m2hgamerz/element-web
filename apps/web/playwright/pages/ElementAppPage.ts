@@ -14,7 +14,7 @@ import { Timeline } from "./timeline";
 import { Spotlight } from "./Spotlight";
 
 /**
- * A set of utility methods for interacting with the Element-Web UI.
+ * A set of utility methods for interacting with the VChat-Web UI.
  */
 export class ElementAppPage {
     public constructor(public readonly page: Page) {}
@@ -264,7 +264,7 @@ export class ElementAppPage {
         await list.hover();
 
         const needsScroll = async () => {
-            // From https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight#determine_if_an_element_has_been_totally_scrolled
+            // From https://developer.mozilla.org/en-US/docs/Web/API/VChat/scrollHeight#determine_if_an_element_has_been_totally_scrolled
             const fullyScrolled = await list.evaluate(
                 (e) => Math.abs(e.scrollHeight - e.clientHeight - e.scrollTop) <= 1,
             );

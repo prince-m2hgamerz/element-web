@@ -10,7 +10,7 @@ Please see LICENSE files in the repository root for full details.
 */
 
 // Note: we don't import the base64 utils from `matrix-js-sdk/src/matrix` because this file
-// is used by Element Web's service worker, and importing `matrix` brings in ~1mb of stuff
+// is used by VChat Web's service worker, and importing `matrix` brings in ~1mb of stuff
 // we don't need. Instead, we ignore the import restriction and only bring in what we actually
 // need.
 // Note: `base64` is not public in the js-sdk, so if it changes/breaks, that's on us. We should

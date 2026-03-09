@@ -49,9 +49,9 @@ export class CallStore extends AsyncStoreWithClient<EmptyObject> {
     }
 
     /**
-     * Fetch transports used by MatrixRTC services, such as Element Call.
+     * Fetch transports used by MatrixRTC services, such as VChat Call.
      * This function is called once during Store startup which means we don't refetch
-     * transports every time we need to check for Element Call support.
+     * transports every time we need to check for VChat Call support.
      */
     protected async fetchTransports(): Promise<void> {
         if (!this.matrixClient) return;

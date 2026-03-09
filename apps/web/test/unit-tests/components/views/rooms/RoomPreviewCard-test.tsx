@@ -72,7 +72,7 @@ describe("RoomPreviewCard", () => {
         screen.getByRole("button", { name: /beta/i });
     });
 
-    it("shows a beta pill on Element video room invites", async () => {
+    it("shows a beta pill on VChat video room invites", async () => {
         jest.spyOn(room, "getType").mockReturnValue(RoomType.UnstableCall);
         jest.spyOn(room, "getMyMembership").mockReturnValue(KnownMembership.Invite);
         enabledFeatures = ["feature_video_rooms", "feature_element_call_video_rooms"];

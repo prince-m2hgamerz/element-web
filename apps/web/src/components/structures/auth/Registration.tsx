@@ -150,7 +150,7 @@ export default class Registration extends React.Component<IProps, IState> {
 
         const { hsUrl, isUrl, delegatedAuthentication } = this.props.serverConfig;
         this.loginLogic = new Login(hsUrl, isUrl, null, {
-            defaultDeviceDisplayName: "Element login check", // We shouldn't ever be used
+            defaultDeviceDisplayName: "VChat login check", // We shouldn't ever be used
             delegatedAuthentication,
         });
     }

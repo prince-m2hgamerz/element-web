@@ -81,9 +81,9 @@ describe("SupportedBrowser", () => {
     ])("should not warn for supported browsers", testUserAgentFactory());
 
     it.each([
-        // Element Nightly on macOS
+        // VChat Nightly on macOS
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) ElementNightly/2024072501 Chrome/126.0.6478.127 Electron/31.2.1 Safari/537.36",
-    ])("should not warn for Element Desktop", testUserAgentFactory());
+    ])("should not warn for VChat Desktop", testUserAgentFactory());
 
     it.each(["AppleTV11,1/11.1"])(
         "should handle unknown user agent sanely",
@@ -102,7 +102,7 @@ describe("SupportedBrowser", () => {
         expect(toastSpy).toHaveBeenCalledWith(
             expect.objectContaining({
                 component: GenericToast,
-                title: "Element does not support this browser",
+                title: "VChat does not support this browser",
             }),
         );
 

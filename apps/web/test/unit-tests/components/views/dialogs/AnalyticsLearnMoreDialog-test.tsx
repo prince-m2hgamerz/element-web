@@ -13,10 +13,10 @@ import { AnalyticsLearnMoreDialog } from "../../../../../src/components/views/di
 describe("AnalyticsLearnMoreDialog", () => {
     it("should match snapshot", async () => {
         const { getByText, asFragment } = render(
-            <AnalyticsLearnMoreDialog onFinished={jest.fn()} analyticsOwner="Element" />,
+            <AnalyticsLearnMoreDialog onFinished={jest.fn()} analyticsOwner="VChat" />,
         );
 
-        expect(getByText("Help improve Element")).toBeInTheDocument();
+        expect(getByText("Help improve VChat")).toBeInTheDocument();
         expect(asFragment()).toMatchSnapshot();
     });
 });

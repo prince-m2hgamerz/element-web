@@ -875,11 +875,11 @@
         "failed_copy": "コピーに失敗しました",
         "hs_blocked": "このホームサーバーは管理者によりブロックされています。",
         "invalid_configuration_no_server": "不正な設定：デフォルトのサーバーが設定されていません。",
-        "invalid_json": "Elementの設定ファイルに不正なJSONが含まれています。問題を修正してからページを再読み込みしてください。",
+        "invalid_json": "VChatの設定ファイルに不正なJSONが含まれています。問題を修正してからページを再読み込みしてください。",
         "invalid_json_detail": "パーサーのメッセージ：%(message)s",
         "invalid_json_generic": "不正なJSON",
         "mau": "このホームサーバーは月間アクティブユーザー数の上限に達しました 。",
-        "misconfigured": "Elementの設定が誤っています",
+        "misconfigured": "VChatの設定が誤っています",
         "mixed_content": "HTTPSのURLがブラウザーのバーにある場合、HTTP経由でホームサーバーに接続することはできません。HTTPSを使用するか<a>安全でないスクリプトを有効にしてください</a>。",
         "non_urgent_echo_failure_toast": "あなたのサーバーはいくつかの<a>リクエスト</a>に応答しません。",
         "resource_limits": "このホームサーバーはリソースの上限に達しました。",
@@ -1197,7 +1197,7 @@
         "currently_experimental": "現在実験中。",
         "custom_themes": "ユーザー定義のテーマの追加をサポート",
         "dynamic_room_predecessors_description": "MSC3946を有効にする（遅延ルームアーカイブのサポート）",
-        "element_call_video_rooms": "Element Callのビデオ通話ルーム",
+        "element_call_video_rooms": "VChat Callのビデオ通話ルーム",
         "experimental_description": "実験に参加したいですか？開発中のアイディアを試してください。これらの機能は完成していません。不安定な可能性や変更される可能性、また、開発が中止される可能性もあります。<a>詳細を確認</a>。",
         "experimental_section": "早期プレビュー",
         "feature_wysiwyg_composer_description": "メッセージ入力欄でマークダウンの代わりにリッチテキストを使用。",
@@ -3167,7 +3167,7 @@
         "you_are_presenting": "あなたが画面を共有しています"
     },
     "web_default_device_name": "%(appName)s： %(osName)sの%(browserName)s",
-    "welcome_to_element": "Elementにようこそ",
+    "welcome_to_element": "VChatにようこそ",
     "widget": {
         "added_by": "ウィジェットの追加者",
         "capabilities_dialog": {

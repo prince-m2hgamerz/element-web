@@ -1,7 +1,7 @@
 {
     "name": "@element-hq/web-shared-components",
     "version": "0.0.2",
-    "description": "Shared components for Element",
+    "description": "Shared components for VChat",
     "author": "New Vector Ltd.",
     "repository": {
         "type": "git",

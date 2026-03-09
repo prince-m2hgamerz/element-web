@@ -1,9 +1,9 @@
 # Deprecated Module system
 
 > [!CAUTION]
-> DEPRECATED. Use [Element web module api](https://github.com/element-hq/element-modules/tree/main/packages/element-web-module-api) instead.
+> DEPRECATED. Use [VChat web module api](https://github.com/element-hq/element-modules/tree/main/packages/element-web-module-api) instead.
 
-The module system in Element Web is a way to add or modify functionality of Element Web itself, bundled at compile time
+The module system in VChat Web is a way to add or modify functionality of VChat Web itself, bundled at compile time
 for the app. This means that modules are loaded as part of the `pnpm build` process but have an effect on user experience
 at runtime.
 

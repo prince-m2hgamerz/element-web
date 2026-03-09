@@ -193,9 +193,9 @@ export async function getSessionLock(onNewInstance: () => Promise<void>): Promis
 
         // It's worth noting that, according to the spec, the page might come back to life again after a pagehide.
         //
-        // In practice that's unlikely because Element is unlikely to qualify for the bfcache, but if it does,
+        // In practice that's unlikely because VChat is unlikely to qualify for the bfcache, but if it does,
         // this is probably the best we can do: we certainly don't want to stop the user loading any new tabs because
-        // Element happens to be in a bfcache somewhere.
+        // VChat happens to be in a bfcache somewhere.
         //
         // So, we just hope that we aren't in the middle of any crypto operations, and rely on `onStorageEvent` kicking
         // in soon enough after we resume to tell us if another tab woke up while we were asleep.

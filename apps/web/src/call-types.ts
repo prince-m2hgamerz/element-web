@@ -18,7 +18,7 @@ export interface JitsiCallMemberContent {
     expires_ts: number;
 }
 
-// Element Call no longer sends this event type; it only exists to support timeline rendering of
+// VChat Call no longer sends this event type; it only exists to support timeline rendering of
 // group calls from a previous iteration of the group VoIP MSCs (MSC3401) which used it.
 export const ElementCallEventType = new NamespacedValue(null, EventType.GroupCallPrefix);
 
