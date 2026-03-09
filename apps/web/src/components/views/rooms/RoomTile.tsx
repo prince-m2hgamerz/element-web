@@ -46,6 +46,9 @@ import { UIComponent } from "../../../settings/UIFeature";
 import { isKnockDenied } from "../../../utils/membership";
 import SettingsStore from "../../../settings/SettingsStore";
 import { getNotificationIcon } from "../dialogs/spotlight/RoomResultContextMenus.tsx";
+import DMRoomMap from "../../../utils/DMRoomMap";
+import VerifiedBadge from "../elements/VerifiedBadge";
+import { shouldShowVerifiedBadge } from "../../../utils/verifiedBadges";
 
 interface Props {
     room: Room;
@@ -386,6 +389,12 @@ class RoomTile extends React.PureComponent<Props, State> {
         if (typeof name !== "string") name = "";
         name = name.replace(":", ":\u200b"); // add a zero-width space to allow linewrapping after the colon
 
+        const dmPartnerId = DMRoomMap.shared().getUserIdForRoomId(this.props.room.roomId);
+        const showVerifiedBadge = shouldShowVerifiedBadge({
+            userId: dmPartnerId,
+            room: this.props.room,
+        });
+
         let badge: React.ReactNode;
         if (!this.props.isMinimized && this.notificationState) {
             // aria-hidden because we summarise the unread count/highlight status in a manual aria-label below
@@ -414,7 +423,10 @@ class RoomTile extends React.PureComponent<Props, State> {
         const titleContainer = this.props.isMinimized ? null : (
             <div className="mx_RoomTile_titleContainer">
                 <div title={name} className={titleClasses} tabIndex={-1}>
-                    <span dir="auto">{name}</span>
+                    <span className="mx_RoomTile_titleText" dir="auto">
+                        {name}
+                    </span>
+                    {showVerifiedBadge && <VerifiedBadge className="mx_RoomTile_verifiedBadge" />}
                 </div>
                 {subtitle}
             </div>

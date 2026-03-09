@@ -67,10 +67,27 @@ Please see LICENSE files in the repository root for full details.
         .mx_RoomTile_title {
             font: var(--cpd-font-body-md-regular);
             line-height: 1.25;
+            display: inline-flex;
+            align-items: center;
+            min-width: 0;
 
             &.mx_RoomTile_titleHasUnreadEvents {
                 font-weight: var(--cpd-font-weight-semibold);
             }
+        }
+
+        .mx_RoomTile_titleText {
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .mx_RoomTile_verifiedBadge {
+            --mx-verified-size: 14px;
+
+            margin-inline-start: 4px;
+            font-size: 9px;
         }
 
         .mx_RoomTile_titleWithSubtitle {

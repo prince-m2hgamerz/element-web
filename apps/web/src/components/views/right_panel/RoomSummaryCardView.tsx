@@ -50,6 +50,9 @@ import { Linkify, topicToHtml } from "../../../HtmlUtils.tsx";
 import { useRoomSummaryCardViewModel } from "../../viewmodels/right_panel/RoomSummaryCardViewModel.tsx";
 import { useRoomTopicViewModel } from "../../viewmodels/right_panel/RoomSummaryCardTopicViewModel.tsx";
 import { useRoomName } from "../../../hooks/useRoomName.ts";
+import DMRoomMap from "../../../utils/DMRoomMap";
+import VerifiedBadge from "../elements/VerifiedBadge.tsx";
+import { shouldShowVerifiedBadge } from "../../../utils/verifiedBadges.ts";
 
 interface IProps {
     room: Room;
@@ -133,6 +136,11 @@ const RoomSummaryCardView: React.FC<IProps> = ({
     const vm = useRoomSummaryCardViewModel(room, permalinkCreator, onSearchCancel);
     // XXX: this name should be part of the view model
     const name = useRoomName(room);
+    const dmPartnerId = DMRoomMap.shared().getUserIdForRoomId(room.roomId);
+    const showVerifiedBadge = shouldShowVerifiedBadge({
+        userId: dmPartnerId,
+        room,
+    });
 
     // The search field is controlled and onSearchChange is debounced in RoomView,
     // so we need to set the value of the input right away
@@ -151,7 +159,8 @@ const RoomSummaryCardView: React.FC<IProps> = ({
                 className="mx_RoomSummaryCard_roomName text-primary"
                 title={name}
             >
-                {name}
+                <span>{name}</span>
+                {showVerifiedBadge && <VerifiedBadge className="mx_RoomSummaryCard_verifiedBadge" />}
             </Heading>
             <Text
                 as="div"

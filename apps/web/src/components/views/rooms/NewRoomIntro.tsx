@@ -33,6 +33,8 @@ import { shouldEncryptRoomWithSingle3rdPartyInvite } from "../../../utils/room/s
 import { useScopedRoomContext } from "../../../contexts/ScopedRoomContext.tsx";
 import { useTopic } from "../../../hooks/room/useTopic";
 import { topicToHtml, Linkify } from "../../../HtmlUtils";
+import VerifiedBadge from "../elements/VerifiedBadge";
+import { shouldShowVerifiedBadge } from "../../../utils/verifiedBadges";
 
 function hasExpectedEncryptionSettings(matrixClient: MatrixClient, room: Room): boolean {
     const isEncrypted: boolean = matrixClient.isRoomEncrypted(room.roomId);
@@ -68,6 +70,10 @@ const NewRoomIntro: React.FC = () => {
     if (dmPartner) {
         const { shouldEncrypt: encryptedSingle3rdPartyInvite } = shouldEncryptRoomWithSingle3rdPartyInvite(room);
         const introMessage = determineIntroMessage(room, encryptedSingle3rdPartyInvite);
+        const showVerifiedBadge = shouldShowVerifiedBadge({
+            userId: dmPartner,
+            room,
+        });
         let caption: string | undefined;
 
         if (
@@ -94,7 +100,10 @@ const NewRoomIntro: React.FC = () => {
                     }}
                 />
 
-                <h2>{room.name}</h2>
+                <h2 className="mx_NewRoomIntro_name">
+                    <span>{room.name}</span>
+                    {showVerifiedBadge && <VerifiedBadge className="mx_NewRoomIntro_verifiedBadge" />}
+                </h2>
 
                 <p>
                     {_t(
