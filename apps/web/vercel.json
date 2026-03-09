@@ -1,6 +1,6 @@
 {
     "$schema": "https://openapi.vercel.sh/vercel.json",
-    "buildCommand": "npx nx build vchat-web",
+    "buildCommand": "cd ../.. && npx nx build vchat-web",
     "outputDirectory": "webapp",
     "installCommand": "pnpm install"
 }

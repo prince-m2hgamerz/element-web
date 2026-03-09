@@ -108,3 +108,7 @@
 [33mNo name was provided for external module "react-virtuoso" in "output.globals" – guessing "reactVirtuoso".[39m
 <i> [webpack-dev-middleware] wait until bundle finished: /version
 <i> [webpack-dev-middleware] wait until bundle finished: /version
+<i> [webpack-dev-middleware] wait until bundle finished: /version
+<i> [webpack-dev-middleware] wait until bundle finished: /version
+<i> [webpack-dev-middleware] wait until bundle finished: /
+<i> [webpack-dev-middleware] wait until bundle finished: /sw.js
