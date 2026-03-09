@@ -49,6 +49,7 @@ if (process.env.SENTRY_DSN) {
 }
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const runtimeConfigSource = fs.existsSync(path.resolve(__dirname, "config.json")) ? "config.json" : "config.sample.json";
 
 dotenv.config();
 let ogImageUrl = process.env.RIOT_OG_IMAGE_URL;
@@ -717,7 +718,9 @@ export default (env: string, argv: Record<string, any>): webpack.Configuration =
                     { from: "vector-icons/**", context: path.resolve(__dirname, "res") },
                     { from: "decoder-ring/**", context: path.resolve(__dirname, "res") },
                     { from: "media/**", context: path.resolve(__dirname, "res/") },
-                    { from: "config.json", noErrorOnMissing: true },
+                    // Always ship a runtime config file. Local builds prefer config.json,
+                    // while CI/Vercel can fall back to the tracked sample config.
+                    { from: runtimeConfigSource, to: "config.json" },
                     // VChat Call embedded widget
                     {
                         from: "**",
