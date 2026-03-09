@@ -34,3 +34,76 @@
 <i> [webpack-dev-middleware] wait until bundle finished: /vector-icons/24.97ab000.png
 <i> [webpack-dev-middleware] wait until bundle finished: /sw.js
 <i> [webpack-dev-middleware] wait until bundle finished: /vector-icons/144.png
+<e> [webpack-dev-middleware] ModuleNotFoundError: Module not found: Error: Can't resolve './EventContentBody.tsx' in 'C:\Users\m2hga\Downloads\element-web\apps\web\src\components\views\messages'
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\webpack\lib\Compilation.js:2073:28
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\webpack\lib\NormalModuleFactory.js:1041:13
+<e>     at eval (eval at create (C:\Users\m2hga\Downloads\element-web\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\webpack\lib\NormalModuleFactory.js:437:22
+<e>     at eval (eval at create (C:\Users\m2hga\Downloads\element-web\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\webpack\lib\NormalModuleFactory.js:622:22
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\webpack\lib\NormalModuleFactory.js:181:10
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\webpack\lib\NormalModuleFactory.js:894:25
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\webpack\lib\NormalModuleFactory.js:1126:8
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\webpack\lib\NormalModuleFactory.js:1255:5
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\neo-async\async.js:6883:13
+<e>     at Array.<anonymous> (C:\Users\m2hga\Downloads\element-web\node_modules\webpack\lib\NormalModuleFactory.js:1230:14)
+<e>     at arrayEachFunc (C:\Users\m2hga\Downloads\element-web\node_modules\neo-async\async.js:2517:19)
+<e>     at Object.parallel (C:\Users\m2hga\Downloads\element-web\node_modules\neo-async\async.js:6858:9)
+<e>     at NormalModuleFactory._resolveResourceErrorHints (C:\Users\m2hga\Downloads\element-web\node_modules\webpack\lib\NormalModuleFactory.js:1154:12)
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\webpack\lib\NormalModuleFactory.js:1086:18
+<e>     at finishWithoutResolve (C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\Resolver.js:589:11)
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\Resolver.js:678:14
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\Resolver.js:739:5
+<e>     at eval (eval at create (C:\Users\m2hga\Downloads\element-web\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\Resolver.js:739:5
+<e>     at eval (eval at create (C:\Users\m2hga\Downloads\element-web\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\Resolver.js:739:5
+<e>     at eval (eval at create (C:\Users\m2hga\Downloads\element-web\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\AliasUtils.js:166:11
+<e>     at next (C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\forEachBail.js:35:3)
+<e>     at forEachBail (C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\forEachBail.js:49:9)
+<e>     at aliasResolveHandler (C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\AliasUtils.js:62:2)
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\AliasPlugin.js:37:5
+<e>     at _next0 (eval at create (C:\Users\m2hga\Downloads\element-web\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:8:1)
+<e>     at eval (eval at create (C:\Users\m2hga\Downloads\element-web\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:30:1)
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\Resolver.js:739:5
+<e>     at eval (eval at create (C:\Users\m2hga\Downloads\element-web\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\Resolver.js:739:5
+<e>     at eval (eval at create (C:\Users\m2hga\Downloads\element-web\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\Resolver.js:739:5
+<e>     at eval (eval at create (C:\Users\m2hga\Downloads\element-web\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\Resolver.js:739:5
+<e>     at eval (eval at create (C:\Users\m2hga\Downloads\element-web\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\Resolver.js:739:5
+<e>     at eval (eval at create (C:\Users\m2hga\Downloads\element-web\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+<e>     at C:\Users\m2hga\Downloads\element-web\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+<e>     at process.processTicksAndRejections (node:internal/process/task_queues:88:21)
+<e> resolve './EventContentBody.tsx' in 'C:\Users\m2hga\Downloads\element-web\apps\web\src\components\views\messages'
+<e>   using description file: C:\Users\m2hga\Downloads\element-web\apps\web\package.json (relative path: ./src/components/views/messages)
+<e>     Field 'browser' doesn't contain a valid alias configuration
+<e>     using description file: C:\Users\m2hga\Downloads\element-web\apps\web\package.json (relative path: ./src/components/views/messages/EventContentBody.tsx)
+<e>       no extension
+<e>         Field 'browser' doesn't contain a valid alias configuration
+<e>         C:\Users\m2hga\Downloads\element-web\apps\web\src\components\views\messages\EventContentBody.tsx doesn't exist
+<e>       .js
+<e>         Field 'browser' doesn't contain a valid alias configuration
+<e>         C:\Users\m2hga\Downloads\element-web\apps\web\src\components\views\messages\EventContentBody.tsx.js doesn't exist
+<e>       .json
+<e>         Field 'browser' doesn't contain a valid alias configuration
+<e>         C:\Users\m2hga\Downloads\element-web\apps\web\src\components\views\messages\EventContentBody.tsx.json doesn't exist
+<e>       .ts
+<e>         Field 'browser' doesn't contain a valid alias configuration
+<e>         C:\Users\m2hga\Downloads\element-web\apps\web\src\components\views\messages\EventContentBody.tsx.ts doesn't exist
+<e>       .tsx
+<e>         Field 'browser' doesn't contain a valid alias configuration
+<e>         C:\Users\m2hga\Downloads\element-web\apps\web\src\components\views\messages\EventContentBody.tsx.tsx doesn't exist
+<e>       as directory
+<e>         C:\Users\m2hga\Downloads\element-web\apps\web\src\components\views\messages\EventContentBody.tsx doesn't exist
+[33mNo name was provided for external module "@vector-im/compound-web" in "output.globals" – guessing "compoundWeb".[39m
+[33mNo name was provided for external module "react-virtuoso" in "output.globals" – guessing "reactVirtuoso".[39m
+[33mNo name was provided for external module "@vector-im/compound-web" in "output.globals" – guessing "compoundWeb".[39m
+[33mNo name was provided for external module "react-virtuoso" in "output.globals" – guessing "reactVirtuoso".[39m
+<i> [webpack-dev-middleware] wait until bundle finished: /version
