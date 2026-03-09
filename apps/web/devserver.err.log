@@ -9,3 +9,28 @@
 [7m35[0m         const hideFilters = (list: VChat): void => {
 [7m  [0m [91m                                   ~~~~~[0m
 
+<i> [webpack-dev-middleware] wait until bundle finished: /
+<i> [webpack-dev-middleware] wait until bundle finished: /serviceworker.9d82ee6ea01c8630cdb6.hot-update.json
+<i> [webpack-dev-middleware] wait until bundle finished: /
+<i> [webpack-dev-middleware] wait until bundle finished: /
+<i> [webpack-dev-middleware] wait until bundle finished: /serviceworker.646b1bd504db5f30a330.hot-update.json
+<i> [webpack-dev-middleware] wait until bundle finished: /config.localhost.json?cachebuster=1773058123656
+<i> [webpack-dev-middleware] wait until bundle finished: /config.json?cachebuster=1773058123657
+<i> [webpack-dev-middleware] wait until bundle finished: /version
+<i> [webpack-dev-middleware] wait until bundle finished: /bundles/_dev_/default-src_audio_consts_ts.js
+<i> [webpack-dev-middleware] wait until bundle finished: /bundles/_dev_/indexeddb.worker.js
+<i> [webpack-dev-middleware] wait until bundle finished: /fonts/inter-latin-600-normal.69a8d1d.woff2
+<i> [webpack-dev-middleware] wait until bundle finished: /bundles/_dev_/default-node_modules_maplibre-gl_dist_maplibre-gl_js.js
+<i> [webpack-dev-middleware] wait until bundle finished: /fonts/Twemoji_Mozilla/TwemojiMozilla-colr.666a113.woff2
+<i> [webpack-dev-middleware] wait until bundle finished: /
+<i> [webpack-dev-middleware] wait until bundle finished: /config.localhost.json?cachebuster=1773058405142
+<i> [webpack-dev-middleware] wait until bundle finished: /config.json?cachebuster=1773058405143
+<i> [webpack-dev-middleware] wait until bundle finished: /sw.js
+<i> [webpack-dev-middleware] wait until bundle finished: /vector-icons/24.97ab000.png
+<i> [webpack-dev-middleware] wait until bundle finished: /vector-icons/144.png
+<i> [webpack-dev-middleware] wait until bundle finished: /
+<i> [webpack-dev-middleware] wait until bundle finished: /config.localhost.json?cachebuster=1773058673842
+<i> [webpack-dev-middleware] wait until bundle finished: /config.json?cachebuster=1773058673843
+<i> [webpack-dev-middleware] wait until bundle finished: /vector-icons/24.97ab000.png
+<i> [webpack-dev-middleware] wait until bundle finished: /sw.js
+<i> [webpack-dev-middleware] wait until bundle finished: /vector-icons/144.png
