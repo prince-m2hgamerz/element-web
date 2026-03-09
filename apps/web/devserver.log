@@ -104,3 +104,24 @@ webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 2711 ms
 623 assets
 4160 modules
 webpack 5.105.3 compiled [1m[32msuccessfully[39m[22m in 10335 ms
+[36m
+build started...[39m
+[32m✓[39m 38 modules transformed.
+
+[vite:dts] Start generate declaration files...
+[2mdist/[22m[36melement-web-shared-components.js  [39m[1m[2m406.77 kB[22m[1m[22m[2m │ gzip: 112.25 kB[22m
+[2mdist/[22m[35melement-web-shared-components.css      [39m[1m[2m 58.17 kB[22m[1m[22m[2m │ gzip:  9.94 kB[22m
+[2mdist/[22m[36melement-web-shared-components.umd.cjs  [39m[1m[2m298.01 kB[22m[1m[22m[2m │ gzip: 99.46 kB[22m
+[vite:dts] Start rollup declaration files...
+Analysis will use the bundled TypeScript version 5.8.2
+*** The target project appears to use TypeScript 5.9.3 which is newer than the bundled compiler engine; consider upgrading API Extractor.
+[vite:dts] Declaration files built in 6378ms.
+
+[36mbuilt in 7993ms.[39m
+[36m
+build started...[39m
+[32m✓[39m 0 modules transformed.
+[2mdist/[22m[35melement-web-shared-components.css  [39m[1m[2m 58.17 kB[22m[1m[22m[2m │ gzip:   9.94 kB[22m
+[2mdist/[22m[36melement-web-shared-components.js   [39m[1m[2m406.77 kB[22m[1m[22m[2m │ gzip: 112.25 kB[22m
+[2mdist/[22m[36melement-web-shared-components.umd.cjs  [39m[1m[2m298.01 kB[22m[1m[22m[2m │ gzip: 99.46 kB[22m
+[36mbuilt in 2035ms.[39m
